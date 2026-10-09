@@ -4,8 +4,8 @@ Unzip BOTH parts into the same folder. Static export, no build step, no dependen
 
 ## Host on GitHub Pages
 
-1. Push the combined contents to a repo root (`index.html` at root, `src/work/` alongside it).
-2. Repo Settings → Pages → Deploy from branch → `main`, `/ (root)`.
-3. The URL appears under the sidebar's Deployments once the build finishes.
+1. Push the combined contents to a repo root (`index.html` at root, `src/` and `work/` alongside it).
+2. `CNAME` (portfolio.chicomorais.com) is included for the custom domain.
+3. Repo Settings → Pages → Deploy from branch → `main`, `/ (root)`.
 
-Routes are hash-based (`#/work`, `#/photography/<series>` …), so no redirects/rewrites are needed.
+Routes are hash-based (`#/work`, `#/photography/<series>` …), so no redirects/rewrites are needed. `work/*` mirrors + `sitemap.xml` are included for SEO/social shares.

@@ -7,12 +7,10 @@
 <meta name="description" content="Chico Morais — designer, photographer and creative technologist based in Berlin. Human-centred design, photography, exhibitions and physical computing.">
 <meta property="og:title" content="Chico Morais — Design, Photography &amp; Creative Technology">
 <meta property="og:description" content="Chico Morais — designer, photographer and creative technologist based in Berlin. Human-centred design, photography, exhibitions and physical computing.">
-<meta property="og:image" content="https://user.uploads.dev/file/3f8aae55267853f5f6303b67a596608e.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-
   *, *::before, *::after { box-sizing: border-box; }
 
   :root {
@@ -411,6 +409,7 @@
   .shot-media > img[src] { cursor: zoom-in; }
 
   .shot-wide { max-width: var(--maxw); margin-inline: auto; padding-inline: var(--pad); }
+  .shot-wide.no-pad { padding-inline: 0; }
   .shot-wide.align-left .shot-media { max-width: min(440px, 100%); }
   .shot-wide .shot-media { aspect-ratio: var(--ar, 4 / 3); }
   .shot-full .shot-media { aspect-ratio: var(--ar, 16 / 9); border-left: 0; border-right: 0; border-radius: 0; }
@@ -610,7 +609,7 @@
   .link-cell .lc-r { font-family: var(--mono); font-size: 11px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; margin-left: auto; }
 
   .site-foot { border-top: 1px solid var(--line); padding-top: clamp(40px, 6vw, 72px); margin-top: clamp(30px, 5vw, 60px); }
-  .foot-grid { display: grid; grid-template-columns: 1.25fr 0.75fr 1.5fr; gap: 32px; padding-bottom: 40px; }
+  .foot-grid { display: grid; grid-template-columns: 1fr auto; gap: 32px; padding-bottom: 40px; }
   .foot-col { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
   .foot-col, .foot-col p, .foot-col a { overflow-wrap: anywhere; }
   .foot-col a { font-size: 15px; color: var(--ink-2); }
@@ -761,7 +760,6 @@
   }
   @media (prefers-reduced-motion: reduce) {
     .hero-scroll .hs-arrow { animation: none; }
-
 </style>
 </head>
 <body>
@@ -803,10 +801,6 @@
 <footer class="site-foot">
   <div class="container foot-grid">
     <div class="foot-col">
-      <p class="foot-name">Francisco Morais Tavares</p>
-      <p class="muted" id="footTag">Berlin · working internationally · PT EN ES DE</p>
-    </div>
-    <div class="foot-col">
       <p class="foot-label" id="footNavLabel">Navigate</p>
       <a href="#/work" data-nav="work">Work</a>
       <a href="#/photography" data-nav="photography">Photography</a>
@@ -820,7 +814,7 @@
   </div>
   <div class="container foot-base">
     <span class="muted" id="footCopy">© 2026 Francisco Morais Tavares (Chico Morais). All rights reserved.</span>
-    <span class="muted" id="footLine2">Berlin · working internationally · PT EN ES DE</span>
+    <span class="muted" id="footLine2">Berlin · working internationally · Portuguese · English · Spanish · German</span>
   </div>
 </footer>
 
@@ -867,10 +861,8 @@ function paintLang() {
     const k = a.getAttribute("data-nav");
     if (nav[k]) a.textContent = L(nav[k][0], nav[k][1]);
   });
-  const ft = document.getElementById("footTag");
-  if (ft) ft.textContent = L("Berlin · working internationally · PT EN ES DE", "Berlim · atuando internacionalmente · PT EN ES DE");
   const fl = document.getElementById("footLine2");
-  if (fl) fl.textContent = L("Berlin · working internationally · PT EN ES DE", "Berlim · atuando internacionalmente · PT EN ES DE");
+  if (fl) fl.textContent = L("Berlin · working internationally · Portuguese · English · Spanish · German", "Berlim · atuando internacionalmente · Português · Inglês · Espanhol · Alemão");
   const fc = document.getElementById("footCopy");
   if (fc) fc.textContent = L("© 2026 Francisco Morais Tavares (Chico Morais). All rights reserved.", "© 2026 Francisco Morais Tavares (Chico Morais). Todos os direitos reservados.");
   if (typeof paintThemeBtn === "function") paintThemeBtn();
@@ -882,7 +874,7 @@ const SITE = {
   role: "Designer · Photographer · Creative Technologist",
   location: { en: "Berlin · working internationally", pt: "Berlim · atuando internacionalmente" },
   heroLine: { en: "Designer, photographer and creative technologist.", pt: "Designer, fotógrafo e tecnólogo criativo." },
-  intro: { en: "I design objects, images and experiences that begin with people: what they feel, what they need, what moves them. Since 2008 this has taken me from public hospitals and clinics in Rio de Janeiro to exhibition design, app design, printed textiles and interactive prototypes, and, through photography, across five continents. Today I work from Berlin, where design, image and technology meet.", pt: "Crio objetos, imagens e experiências que começam pelas pessoas: pelo que sentem, pelo que precisam, pelo que as move. Desde 2008, esse caminho me levou de hospitais e postos de saúde públicos do Rio de Janeiro ao design de exposições e de aplicativos, a estampas e a protótipos interativos e, pela fotografia, a cinco continentes. Hoje trabalho a partir de Berlim, no encontro entre design, imagem e tecnologia." },
+  intro: { en: "I design objects, images and experiences that begin with people: what they feel, what they need, what moves them. Since 2008 this has taken me from public hospitals and clinics in Rio de Janeiro to exhibition design, app design, printed textiles and interactive prototypes, and, through photography, across five continents. Today, from Berlin, I work where design, image and technology meet.", pt: "Crio objetos, imagens e experiências que começam pelas pessoas: pelo que sentem, pelo que precisam, pelo que as move. Desde 2008, esse caminho me levou de hospitais e postos de saúde públicos do Rio de Janeiro ao design de exposições e de aplicativos, a estampas e a protótipos interativos e, pela fotografia, a cinco continentes. Hoje, a partir de Berlim, trabalho onde design, imagem e tecnologia se encontram." },
   email: "chicomt@gmail.com",
   links: [
     { label: "@chicomoraisphoto", note: "Instagram", href: "https://www.instagram.com/chicomoraisphoto" },
@@ -971,10 +963,10 @@ const PROJECTS = [
         { en: "With the content settled, the working title no longer fitted. I mapped the journey a visitor would take: from individuals in their own bedrooms, through a deconstruction of gender and the body, and back to nature, where we all come from. Pele Bruta — literally raw skin — sets the delicacy of skin against the roughness and purity of natural textures.", pt: "Com o conteúdo definido, o título provisório já não servia. Mapeei o percurso que o visitante faria: dos indivíduos em seus próprios quartos, passando por uma desconstrução do gênero e do corpo, até o retorno à natureza, de onde todos viemos. Pele Bruta contrapõe a delicadeza da pele à rudeza e à pureza das texturas da natureza." }
       ] },
       { h: { en: "Designing the walls at full scale", pt: "As paredes em escala real" }, p: [
-        { en: "I planned each wall on the computer, then tested the plans in the space itself: I rented a projector and projected the future prints onto the venue's walls at their real size. Standing in the room, I could see that a grid of small portraits had far less presence than one large image, and the portraits became a single looping projection. I am certain the idea came from my background in digital media design.", pt: "Planejei cada parede no computador e depois testei os planos no próprio espaço: aluguei um projetor e projetei as futuras impressões nas paredes do local, em tamanho real. Dentro da sala, percebi que uma grade de retratos pequenos tinha muito menos presença do que uma única imagem grande, e os retratos viraram uma projeção única, em loop. Tenho certeza de que a ideia veio da minha formação em design de mídia digital." }
+        { en: "I planned each wall on the computer, then tested the plans in the space itself: I rented a projector and projected the future prints onto the venue's walls at their real size. Standing in the room, I could see that a grid of small portraits had far less presence than one large image, and the portraits became a single looping projection. The idea came from my background in digital media design.", pt: "Planejei cada parede no computador e depois testei os planos no próprio espaço: aluguei um projetor e projetei as futuras impressões nas paredes do local, em tamanho real. Dentro da sala, percebi que uma grade de retratos pequenos tinha muito menos presença do que uma única imagem grande, e os retratos viraram uma projeção única, em loop. A ideia veio da minha formação em design de mídia digital." }
       ] },
       { h: { en: "Building the exhibition", pt: "A montagem" }, p: [
-        { en: "Late in the process I discovered that the whole body of work had been edited in 8-bit, while the print shop needed 16-bit, so I re-edited and re-exported everything. I built the projection screen and the mounting panels myself in MDF, at the university volume workshop; no sheet was large enough, so I joined several and painted over the seams. The heavier panels were screwed straight into the walls, and the prints hung from magnetic clips.", pt: "Já no fim do processo, descobri que todo o trabalho havia sido editado em 8 bits, enquanto a gráfica precisava de 16 bits, e por isso reeditei e reexportei tudo. Construí a tela de projeção e os painéis de montagem em MDF, na oficina de volume da universidade; nenhuma chapa era grande o suficiente, então uni várias e pintei sobre as emendas. Os painéis mais pesados foram parafusados direto nas paredes, e as impressões penduradas com clipes magnéticos." }
+        { en: "Late in the process, I realized the 8-bit edits showed subtle tonal banding when enlarged for the exhibition panels. I re-edited and re-exported the entire body of work in 16-bit to guarantee pristine gradient transitions in the final fine-art prints. I built the projection screen and the mounting panels myself in MDF, at the university volume workshop; no sheet was large enough, so I joined several and painted over the seams. The heavier panels were screwed straight into the walls, and the prints hung from magnetic clips.", pt: "Já na reta final do processo, percebi que as edições em 8 bits apresentavam um leve efeito de banding (quebra nos gradientes) ao serem ampliadas para os painéis da exposição. Re-editei e re-exportei todo o corpo de trabalho em 16 bits para garantir transições de tom impecáveis nas impressões das artes finais. Construí a tela de projeção e os painéis de montagem em MDF, na oficina de volume da universidade; nenhuma chapa era grande o suficiente, então uni várias e pintei sobre as emendas. Os painéis mais pesados foram parafusados direto nas paredes, e as impressões penduradas com clipes magnéticos." }
       ] },
       { h: { en: "Wall text", pt: "Texto de parede" }, p: [
         { en: "The curatorial text, by Josip Horvat, was placed outside, by the entrance stairs: every visitor read it before going in, and the walls inside were left to the photographs. It was set in Helvetica and Myriad Pro, in dark grey rather than black, and printed in vinyl.", pt: "O texto curatorial, de Josip Horvat, ficou do lado de fora, junto à escada de entrada: todo visitante o lia antes de entrar, e as paredes internas ficavam livres para as fotografias. Foi composto em Helvetica e Myriad Pro, em cinza-escuro em vez de preto, e impresso em vinil." }
@@ -1016,15 +1008,14 @@ const PROJECTS = [
     slug: "tapete-para-misturar-o-mundo-com-brinquedo-emprestado",
     title: "Tapete para Misturar o Mundo com Brinquedo Emprestado",
     subtitle: { en: "A Mat for Mixing the World with Borrowed Toys", pt: "" },
-    oneliner: { en: "A play mat for children waiting at a public hospital, approved by its infection-control committee.", pt: "Um tapete de brincar para as crianças à espera num hospital público, aprovado pela comissão de controle de infecção." },
+    oneliner: { en: "A play mat for children waiting at a public hospital.", pt: "Um tapete de brincar para as crianças à espera num hospital público." },
     year: "2008",
     roles: { en: "Field research · Participant observation · Co-design · Product design · Documentation", pt: "Pesquisa de campo · Observação participante · Co-design · Design de produto · Documentação" },
     context: { en: "Hospital da Lagoa, Rio de Janeiro — Projeto Sala de Espera, part of the Lagoa Voluntário programme · PUC-Rio, Basic Design Project: Context and Concept", pt: "Hospital da Lagoa, Rio de Janeiro — Projeto Sala de Espera, do programa Lagoa Voluntário · PUC-Rio, Projeto Básico: Contexto e Conceito" },
     filters: ["human"],
     sections: [
       { h: null, p: [
-        { en: "A circular play mat in sixteen soft slices for children waiting at a public hospital in Rio de Janeiro. Developed with the volunteers who played with them, it was approved by the hospital's infection-control committee, which wrote a cleaning protocol for it.", pt: "Um tapete circular de brincar, em dezesseis fatias acolchoadas, para as crianças que aguardavam atendimento num hospital público do Rio de Janeiro. Desenvolvido com os voluntários que brincavam com elas, foi aprovado pela Comissão de Controle de Infecção Hospitalar, que escreveu um protocolo de limpeza para ele." },
-        { en: "It was my first year of design school, before I had begun to master digital tools, so the whole project, from the research to the finished object, was developed by hand.", pt: "Era meu primeiro ano na faculdade de design, antes de eu começar a dominar as ferramentas digitais, e por isso todo o projeto, da pesquisa ao objeto final, foi desenvolvido à mão." }
+        { en: "A circular play mat in sixteen soft slices for children waiting at a public hospital in Rio de Janeiro. Developed with the volunteers who played with them, it was approved by the hospital's infection-control committee, which wrote a cleaning protocol for it. The whole project was made by hand, from the word cards to the stitched object.", pt: "Um tapete circular de brincar, em dezesseis fatias acolchoadas, para as crianças que aguardavam atendimento num hospital público do Rio de Janeiro. Desenvolvido com os voluntários que brincavam com elas, foi aprovado pela Comissão de Controle de Infecção Hospitalar, que escreveu um protocolo de limpeza para ele. Todo o projeto foi feito à mão, dos cartões de palavras ao objeto costurado." }
       ] },
       { h: { en: "Observation first", pt: "Observar antes de projetar" }, p: [
         { en: "For weeks I joined the recreation sessions that the volunteers Rosário Abrahão and Diogo Oliveira ran for children waiting at the paediatric outpatient clinic, with no object in mind. Instead of designing, I listened, and wrote down the words the volunteers used as they played.", pt: "Durante semanas, participei das sessões de recreação que os voluntários Rosário Abrahão e Diogo Oliveira conduziam com as crianças à espera no ambulatório pediátrico, sem nenhum objeto em mente. Em vez de projetar, eu escutava e anotava as palavras que os voluntários usavam enquanto brincavam." }
@@ -1069,7 +1060,7 @@ const PROJECTS = [
       ] },
       { h: { en: "Research", pt: "Pesquisa" }, p: [
         { en: "I interviewed the PUC-Rio professors Ana Branco and Irina Aragão and a number of vegetarians, consulted organisations such as the Brazilian Vegetarian Society (SVB), Greenpeace, PETA, IVU and Instituto Nina Rosa, and organised the health, environmental and social arguments into tables and diagrams.", pt: "Entrevistei as professoras da PUC-Rio Ana Branco e Irina Aragão e diversos vegetarianos, consultei organizações como a Sociedade Vegetariana Brasileira (SVB), Greenpeace, PETA, IVU e Instituto Nina Rosa, e organizei os argumentos de saúde, meio ambiente e sociedade em tabelas e diagramas." }
-      ], quote: { en: "15,000 litres of water per kilo of meat · Livestock feed equal to the calorie needs of 8.7 billion people. Figures from the Folhas research, 2011. Sources consulted include the Brazilian Vegetarian Society (SVB), IVU, PETA, the Vegetarian Society and VIVA.", pt: "15 mil litros de água por quilo de carne · Ração animal equivalente às necessidades calóricas de 8,7 bilhões de pessoas. Dados da pesquisa do Folhas, 2011. Entre as fontes consultadas estão a Sociedade Vegetariana Brasileira (SVB), a IVU, a PETA, a Vegetarian Society e a VIVA." } },
+      ], quote: { en: "15,000 litres of water per kilo of beef · Livestock feed equal to the calorie needs of 8.7 billion people. Figures from the Folhas research, 2011. Sources consulted include the Brazilian Vegetarian Society (SVB), IVU, PETA, the Vegetarian Society and VIVA.", pt: "15 mil litros de água por quilo de carne bovina · Ração animal equivalente às necessidades calóricas de 8,7 bilhões de pessoas. Dados da pesquisa do Folhas, 2011. Entre as fontes consultadas estão a Sociedade Vegetariana Brasileira (SVB), a IVU, a PETA, a Vegetarian Society e a VIVA." } },
       { h: null, cards: [
         { en: "In-store merchandising: a better way to display vegetarian products, which were often placed next to the meat counter.", pt: "Merchandising: uma forma melhor de expor produtos vegetarianos, que muitas vezes ficavam ao lado do balcão de carnes." },
         { en: "Children's education: vegetarian information on gum wrappers, school supplies and toys.", pt: "Educação infantil: informação vegetariana em papéis de chiclete, material escolar e brinquedos." },
@@ -1090,7 +1081,7 @@ const PROJECTS = [
       ] },
       { h: { en: "The critique that changed it", pt: "A crítica que mudou tudo" }, p: [
         { en: "My first layout followed the logo literally: a concrete texture while searching, a leaf texture once a place was found. The critique was fair: it was a new skin on the standard iPhone list. I rethought the list as a mesa posta, a table set for a meal, where each dish links to its restaurant and users fill the plates with photos of what they ate. A later review showed the background patterns hurt legibility, so I softened them.", pt: "Meu primeiro layout seguia o logo ao pé da letra: textura de concreto durante a busca, textura de folhas quando um lugar era encontrado. A crítica foi justa: era só uma pele nova sobre a lista padrão do iPhone. Repensei a lista como uma mesa posta, em que cada prato leva ao seu restaurante e os usuários preenchem os pratos com fotos do que comeram. Numa revisão seguinte, as estampas de fundo prejudicavam a leitura, e eu as suavizei." }
-      ] },
+      ], quote: { en: "It was a new skin on the standard iPhone list.", pt: "Era só uma pele nova sobre a lista padrão do iPhone." } },
       { h: { en: "The app", pt: "O aplicativo" } },
       { h: { en: "From concept to business", pt: "Do conceito ao negócio" }, p: [
         { en: "A semester later, I developed Folhas into a business plan: a SWOT analysis, a marketing plan, a three-person team (director, designer and programmer) and a revenue model based on paid downloads and advertising. The market case rested on two figures from the time: 9% of Brazilians called themselves vegetarian, and 14% owned a smartphone.", pt: "Um semestre depois, transformei o Folhas num plano de negócio: análise SWOT, plano de marketing, uma equipe de três funções (diretor, designer e programador) e um modelo de receita baseado em downloads pagos e publicidade. O mercado se apoiava em dois números da época: 9% dos brasileiros se declaravam vegetarianos, e 14% tinham smartphone." }
@@ -1112,7 +1103,7 @@ const PROJECTS = [
     sections: [
       { h: null, p: [
         { en: "In a public health centre in Rio de Janeiro, a semester of observation led me to the moment the children feared most: being measured. Maitê turned the height chart into a giraffe.", pt: "Num posto de saúde público do Rio de Janeiro, um semestre de observação me levou ao momento que as crianças mais temiam: a hora de ser medido. Maitê transformou a régua de altura numa girafa." },
-        { en: "Maitê is one of the first projects in which I used design to care for people's well-being, in a field where health, psychology and healing meet, and one I still hope to work in.", pt: "Maitê é um dos primeiros projetos em que usei o design para cuidar do bem-estar das pessoas, num campo onde se encontram saúde, psicologia e cura, e no qual ainda desejo atuar." }
+        { en: "Maitê is one of the first projects in which I used design to care for people's well-being, in a field where health, psychology and care meet, still one of my passions to work with.", pt: "Maitê é um dos primeiros projetos em que usei o design para cuidar do bem-estar das pessoas, num campo onde a saúde, a psicologia e o cuidado se encontram, ainda uma das minhas paixões para atuar." }
       ] },
       { h: { en: "Finding the right place", pt: "Encontrar o lugar certo" }, p: [
         { en: "Before a clinic said yes, we were turned away by five public schools, two private schools and an institute for autistic children. A promising lead in the paediatric recreation room of Hospital Miguel Couto reached a first observation visit before stalling in paperwork. In the end, the Píndaro de Carvalho Rodrigues health centre, in Gávea, opened its doors, and I went there two or three mornings a week throughout the semester.", pt: "Antes de um posto dizer sim, fomos recusados por cinco escolas públicas, duas particulares e um instituto para crianças autistas. Uma pista promissora na sala de recreação pediátrica do Hospital Miguel Couto chegou a uma primeira visita de observação, mas parou na burocracia. Até que o posto de saúde Píndaro de Carvalho Rodrigues, na Gávea, abriu as portas, e passei a ir até lá duas ou três manhãs por semana, ao longo de todo o semestre." }
@@ -1277,7 +1268,7 @@ const PHOTOGRAPHY = {
     { slug: "emotional-nakedness", title: "Emotional Nakedness", year: "2017", cats: ["Portrait"], note: "Portrait project focused on the male nude.", img: "src/work/photography/emotional-nakedness/totone.jpg", href: "#/photography/emotional-nakedness", ext: "https://www.chicomorais.com/emotional-nakedness-foto-retrato-nu-artistico-masculino", desc: ["Portrait photography project with focus on the male nude","Projeto de fotografia de retrato com foco no nu masculino"] },
     { slug: "puro-tato", title: "Puro Tato", year: "2017", cats: ["Documentary", "Product"], note: "Natural cosmetics made by hand for the Puro Tato programme, with Carol Romeiro.", img: "src/work/photography/puro-tato/DSC_2273.jpg", href: "#/photography/puro-tato", ext: "https://www.chicomorais.com/fotografia-documental-retrato-produto", desc: ["Natural cosmetics being handmade for the shooting for the presentation of the Puro Tato program, with Carol Romeiro.","Cosméticos naturais sendo feitos à mão para o shooting para a apresentação do programa Puro Tato, com Carol Romeiro."] },
     { slug: "southeast-asia", title: "Biking and South East Asia", year: "2017", cats: ["Documentary", "Travel"], note: "Documentary series from a motorcycle journey through South East Asia.", img: "src/work/photography/biking-in-sea/LAO_6097-Edit.jpg", href: "#/photography/southeast-asia", ext: "https://www.chicomorais.com/asia-foto-documentario-jornalismo-moto" },
-    { slug: "spring-in-japan", title: "Spring in Japan", year: "2017", cats: ["Travel"], note: "Travel photography from spring in Japan.", img: "src/work/photography/spring-in-japan/japan-1724.jpg", href: "#/photography/spring-in-japan", ext: "https://www.chicomorais.com/japan-foto-viagem-primavera-mundo" },
+    { slug: "spring-in-japan", title: "Spring in Japan", year: "2017", cats: ["Travel"], note: "Travel photography from spring in Japan.", img: "src/work/photography/spring-in-japan/japan-896-Edit.jpg", href: "#/photography/spring-in-japan", ext: "https://www.chicomorais.com/japan-foto-viagem-primavera-mundo" },
     { slug: "the-florist", title: "The Florist", year: "2013", cats: ["Documentary"], note: "Documentary project telling the story of the florist Francis Rushby and his passion for flowers.", img: "src/work/photography/the-florist/dsc-9213.jpg", href: "#/photography/the-florist", ext: "https://www.chicomorais.com/the-florist-retrato-art-documentario-doc-flor", desc: ["This documentary project tells the story of the florist Francis Rushby and his passion with the flowers.","Esse projeto documental conta a história do florista Francis Rushby e sua paixão com as flores."] },
     { slug: "shibari-night", title: "Shibari Night", year: "2017", cats: ["Portrait"], note: "Portrait series made at Shibari Night.", img: "src/work/photography/shibari-night/DSC_3728-hands.jpg", href: "#/photography/shibari-night", ext: "https://www.chicomorais.com/shibari-night-portrait-retrato-feminino" },
     { slug: "antonia-15", title: "Antônia 15", year: "2018", cats: ["Event"], note: "Social event photography.", img: "src/work/photography/antonia-15/DSC_5534.jpg", href: "#/photography/antonia-15", ext: "https://www.chicomorais.com/festa-casamento-fotografo" }
@@ -1598,10 +1589,10 @@ const SHOTS = {
       { s: 6, u: "src/work/folhas/logo-sketch-rabs.jpg", ar: "521/707", maxw: "420px", c: { en: "Sketchbook: the globe", pt: "Caderno: o globo" }, k: "sketch", w: "trio" },
       { s: 6, u: "src/work/folhas/logo-study.jpg", c: { en: "Studies for a lighter mark", pt: "Estudos para uma marca mais leve" }, k: "sketch", w: "pair" },
       { s: 6, u: "src/work/folhas/logo-marks.jpg", c: { en: "The final mark.", pt: "A marca final." }, k: "grid" },
-      { s: 7, u: "src/work/folhas/characters-dev.jpg", c: { en: "Developing the characters", pt: "O desenvolvimento dos personagens" }, k: "sketch", w: "wide" },
-      { s: 7, u: "src/work/folhas/cut-onigiri.png", ar: "800/597", c: { en: "One of the food characters that mark each restaurant in the list", pt: "Um dos personagens de comida que marcam cada restaurante da lista" }, k: "grid", clear: true, w: "chars" },
-      { s: 7, u: "src/work/folhas/cut-nabinho.png", ar: "800/378", c: { en: "Nabinho, the little turnip", pt: "Nabinho, o nabinho" }, k: "grid", clear: true, w: "chars" },
-      { s: 7, u: "src/work/folhas/cut-crossaint.png", ar: "800/580", c: { en: "The croissant", pt: "O croissant" }, k: "grid", clear: true, w: "chars" },
+      { s: 7, u: "src/work/folhas/characters-dev.jpg", c: { en: "First sketches I drew developing the characters", pt: "Primeiros esboços que desenhei desenvolvendo os personagens" }, k: "sketch", w: "wide" },
+      { s: 7, u: "src/work/folhas/cut-onigiri.png", ar: "800/597", c: { en: "Here I was choosing the design of the eyes", pt: "Aqui eu estava escolhendo o design dos olhos" }, k: "grid", clear: true, w: "chars" },
+      { s: 7, u: "src/work/folhas/cut-nabinho.png", ar: "800/378", c: { en: "Fill study. Whether the characters would have shadow and lighting or flat colours.", pt: "Estudo do preenchimento. Se os personagens teriam sombra e iluminação ou se seriam cores chapadas." }, k: "grid", clear: true, w: "chars" },
+      { s: 7, u: "src/work/folhas/cut-crossaint.png", ar: "800/580", c: { en: "I also tried variations with and without outline.", pt: "Também experimentei variações com e sem linha de contorno." }, k: "grid", clear: true, w: "chars" },
       { s: 7, u: "src/work/folhas/cut-cereja.png", ar: "800/792", c: { en: "Two cherry moods", pt: "Dois humores de cereja" }, k: "grid", clear: true, w: "chars" },
       { s: 7, u: "src/work/folhas/cut-tomate.png", ar: "800/813", c: { en: "The tomato", pt: "O tomate" }, k: "grid", clear: true, w: "chars" },
       { s: 7, u: "src/work/folhas/cut-semente.png", ar: "800/792", c: { en: "The seed", pt: "A semente" }, k: "grid", clear: true, w: "chars" },
@@ -1628,7 +1619,7 @@ const SHOTS = {
       { s: 9, u: "src/work/folhas/juice-scrolled.png", ar: "340/738", maxw: "320px", c: { en: "A juice bar's details, with its ingredients.", pt: "Detalhes de uma casa de sucos, com os ingredientes." }, k: "screen", w: "pair", clear: true },
       { s: 9, u: "src/work/folhas/juice-mid-bottom.png", ar: "327/706", maxw: "320px", c: { en: "Before and after: the background pattern softened so the information reads clearly.", pt: "Antes e depois: a estampa de fundo suavizada para que a informação fique legível." }, k: "screen", w: "pair", clear: true },
       { s: 9, u: "src/work/folhas/juice-mid-top.png", ar: "500/1080", maxw: "320px", c: { en: "Before and after: the background pattern softened so the information reads clearly.", pt: "Antes e depois: a estampa de fundo suavizada para que a informação fique legível." }, k: "screen", w: "pair", clear: true },
-      { s: 9, u: "src/work/folhas/mapa-transparent.png", ar: "339/738", maxw: "320px", c: { en: "Map and list, sorted by distance.", pt: "Mapa e lista, por distância." }, k: "screen", w: "pair", clear: true },
+      { s: 9, u: "src/work/folhas/mapa-transparent.png", ar: "339/738", maxw: "320px", nopad: true, c: { en: "Map and list, sorted by distance.", pt: "Mapa e lista, por distância." }, k: "screen", w: "pair", clear: true },
       { s: 10, u: "src/work/folhas/swot-transparent.png", ar: "816/570", c: { en: "SWOT analysis", pt: "Análise SWOT" }, k: "chart", w: "wide", clear: true }
     ]
   },
@@ -1752,7 +1743,6 @@ function viewHome() {
 
   return '<section class="hero">' +
     '<div class="container hero-inner">' +
-    '<p class="eyebrow">' + esc(LL(SITE.location)) + "</p>" +
     '<h1 style="margin-top:18px"><span class="ln">Chico</span><span class="ln"><em>Morais</em></span></h1>' +
     '<p class="hero-role">' + esc(LL(SITE.heroLine)) + "</p>" +
     '<p class="hero-lede">' + esc(LL(SITE.intro)) + "</p>" +
@@ -1785,6 +1775,7 @@ function viewHome() {
 function contactCTA() {
   return '<section class="section cta-band"><div class="container">' +
     '<p class="eyebrow">' + esc(L("Contact", "Contato")) + "</p>" +
+    '<p class="lede" style="margin-top:12px">' + esc(L("Portuguese · English · Spanish · German", "Português · Inglês · Espanhol · Alemão")) + "</p>" +
     '<p class="contact-big" style="margin-top:20px">' + L('Let\'s make <a href="#/contact">something</a>.', 'Vamos criar <a href="#/contact">algo</a>.') + "</p>" +
     '<p class="lede" style="margin-top:20px">' + esc(L("Based in Berlin, working internationally.", "Em Berlim, com atuação internacional.")) + "</p>" +
     "</div></section>";
@@ -1943,7 +1934,7 @@ function shotGroupHTML(p, group, key) {
   const cap = shotCapHTML(sh, shotSeq);
   const media = '<div class="shot-media' + (sh.clear ? ' clear' : '') + '">' + shotMediaHTML(p.slug, rotatePalette(p.palette, shotSeq), sh, key) + "</div>";
   if (full) return '<figure class="shot shot-full reveal" style="' + fstyle + '">' + media + '<div class="deck-cap-wrap">' + cap + "</div></figure>";
-  return '<figure class="shot shot-wide reveal' + (sh.align ? ' align-' + sh.align : '') + '" style="' + fstyle + '">' + media + cap + "</figure>";
+  return '<figure class="shot shot-wide reveal' + (sh.align ? ' align-' + sh.align : '') + (sh.nopad ? ' no-pad' : '') + '" style="' + fstyle + '">' + media + cap + "</figure>";
 }
 
 function splitInto(arr, k) {
@@ -1976,7 +1967,7 @@ function deckSection(p, s, si, nSections) {
     if (g.imgs) return '<div class="focus-img-pair">' + g.imgs.map(one).join("") + "</div>";
     return g.img ? one(g.img) : "";
   };
-  const grid = s.grid ? '<div class="focus-grid' + (s.gridCls ? " " + esc(s.gridCls) : "") + '">' + s.grid.map((g) => '<div class="focus reveal' + (g.imgs ? " focus--wide" : "") + '">' + gridImg(g) + "<h3>" + esc(LL(g.t)) + "</h3><p>" + esc(LL(g.line)) + "</p>" + (g.link ? '<p><a class="feat-more" href="' + esc(g.link) + '">' + esc(L("See The Florist →", "Ver The Florist →")) + "</a></p>" : "") + "</div>").join("") + "</div>" : "";
+  const grid = s.grid ? '<div class="focus-grid' + (s.gridCls ? " " + esc(s.gridCls) : "") + '">' + s.grid.map((g) => '<div class="focus reveal' + (g.imgs ? " focus--wide" : "") + '">' + gridImg(g) + "<h3>" + esc(LL(g.t)) + "</h3><p>" + esc(LL(g.line)) + "</p>" + (g.link ? '<p><a class="feat-more" href="' + esc(g.link) + '">' + esc(L("See the Florist project →", "Ver o projeto \"The Florist\" →")) + "</a></p>" : "") + "</div>").join("") + "</div>" : "";
   const galFig = (g, wide) => {
     if (!g.u) return '<div class="focus reveal"><p>' + esc(LL(g.t || g)) + "</p></div>";
     shotSeq++;
@@ -2264,7 +2255,7 @@ function viewContact() {
   return pageHead(L("Contact", "Contato"), L("Get in <em>touch</em>", "Vamos <em>conversar</em>"), esc(L("Based in Berlin, working internationally. Write in English, Portuguese, Spanish or German.", "Em Berlim, com atuação internacional. Escreva em português, inglês, espanhol ou alemão."))) +
     '<section class="section" style="padding-top:30px"><div class="container">' +
     '<p class="contact-big"><a href="mailto:' + esc(SITE.email) + '">' + esc(SITE.email) + "</a></p>" +
-    '<p style="margin-top:30px"><button class="btn ghost" id="copyMail" type="button">' + esc(L("Copy email address", "Copiar e-mail")) + "</button></p>" +
+    '<p style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap"><button class="btn ghost" id="copyMail" type="button">' + esc(L("Copy email address", "Copiar e-mail")) + '</button><a class="btn ghost" href="src/docs/Chico-Morais-CV.pdf" download>' + esc(L("Download CV", "Baixar CV")) + "</a></p>" +
     '<div class="sec-head" style="margin-top:clamp(30px,4vw,50px)"><h2 class="sec-title" style="font-size:clamp(24px,3vw,34px)">' + esc(L("Open to", "Aberto a")) + "</h2></div>" +
     '<div class="prose"><ul style="list-style:none;padding:0;margin:0">' + openTo.map((o) => '<li style="padding-left:26px;position:relative;margin-bottom:16px;color:var(--ink-2)"><span style="position:absolute;left:0;top:0;color:var(--accent);font-family:var(--mono);font-size:13px">—</span>' + esc(LL(o)) + "</li>").join("") + "</ul></div>" +
     '<div class="link-list" style="margin-top:44px">' +
@@ -2301,29 +2292,7 @@ function setActiveNav(route) {
 }
 
 let revealIO = null;
-const SRC_FALLBACK = {
-  "src/work/padronagens/suit-hero.jpg": "https://user.uploads.dev/file/c1a563c037beda1f1b69c95ee3da2a32.jpg",
-  "src/work/padronagens/pattern-hongkong-harbour.jpg": "https://user.uploads.dev/file/a17ac15d5e3925527e1abbe48d4b6786.jpg",
-  "src/work/padronagens/pattern-hongkong-tanks.jpg": "https://user.uploads.dev/file/f59b4b4920ec046f346c97f16fef9eeb.jpg",
-  "src/work/padronagens/pattern-japan-wreath.jpg": "https://user.uploads.dev/file/75e2fe92d6238c5d1c1d7b2e499b7243.jpg",
-  "src/work/padronagens/process-arara.jpg": "https://user.uploads.dev/file/286af01f3ffe98192ab351d28f827dd9.jpg",
-  "src/work/padronagens/process-ararahead.jpg": "https://user.uploads.dev/file/239d22c492481e7c11fd318e39fe2c12.jpg",
-  "src/work/padronagens/process-ararahead-big.png": "https://user.uploads.dev/file/2cc9dbdcbcc9defd41af8312ef4f35cd.png",
-  "src/work/padronagens/pattern-sunset.jpg": "https://user.uploads.dev/file/d37e0d8eb21c8338e698f5ab2d32fbdc.jpg",
-  "src/work/padronagens/pattern-sunset-application.jpg": "https://user.uploads.dev/file/40a641182b426d07166a6316a33a8d14.jpg",
-  "src/work/padronagens/applications-1.jpg": "https://user.uploads.dev/file/452212de26e7b911cb263c0e77da21fe.jpg",
-  "src/work/padronagens/applications-1.png": "https://user.uploads.dev/file/5a00d46df8744e18e4b12be319aaacdf.png",
-  "src/work/padronagens/applications-2.jpg": "https://user.uploads.dev/file/0cba0daa6f77849f25210d42a2b5a409.jpg",
-  "src/work/padronagens/application-arara.jpg": "https://user.uploads.dev/file/29c39c3d620d90fa81d21e8dcc69d177.jpg",
-  "src/work/padronagens/application-ararahead.jpg": "https://user.uploads.dev/file/b20fe34028263f4e0546732f1bf90263.jpg"
-};
-document.addEventListener("error", (e) => {
-  const t = e.target;
-  if (t && t.tagName === "IMG" && !t.dataset.fb) {
-    const fb = SRC_FALLBACK[t.getAttribute("src")];
-    if (fb) { t.dataset.fb = "1"; t.src = fb; }
-  }
-}, true);
+const SRC_FALLBACK = {};;
 function hydrateImages(force) {
   const vh = window.innerHeight || 800;
   document.querySelectorAll("img[data-src]").forEach((img) => {
@@ -2581,7 +2550,7 @@ let MXT = null, MXRAF = null, MXSTREAM = null, MXRSZH = null, MXPHRASE = 0;
 const MXSAVED = [];
 
 function mxHTML() {
-  return '<div class="mxdet reveal"><p class="mxdet-label">' + esc(L("Try it: the same detection, running on the original frames.", "Experimente: a mesma detecção, rodando sobre os quadros originais.")) + "</p>" +
+  return '<div class="mxdet reveal"><p class="mxdet-label">' + esc(L("Try it: the same detection, running on the original frames (rebuilt for the browser, 2026).", "Experimente: a mesma detecção, rodando sobre os quadros originais (reconstruída para o navegador, 2026).")) + "</p>" +
     '<div class="mx-panel"><h2>' + esc(L("01 · Real capture playback", "01 · Reprodução da captura real")) + "</h2>" +
     '<p class="mx-h2sub">' + L("12 frames from <code>G2chico/</code>, 2012 — not restaged, not a stock GIF.", "12 quadros de <code>G2chico/</code>, 2012 — sem reencenação, sem GIF genérico.") + "</p>" +
     '<div class="mx-stage"><div class="mx-photo" id="mxBox">' +
@@ -3672,7 +3641,6 @@ function init() {
 }
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
-
 </script>
 </body>
 </html>
