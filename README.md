@@ -1,29 +1,26 @@
-# Chico Morais — portfolio site
+# Chico Morais — portfolio site (static backup, 2026-11-16)
 
-Static site. No build step, no dependencies. Just host the files.
+Static snapshot of https://portfolio.chicomorais.com. Serve this folder
+(`npx serve`, VS Code Live Server, or any static host / GitHub Pages) —
+do not just double-click index.html: browsers block the site scripts on file://.
 
-## Host free on GitHub Pages
+## Publish on GitHub Pages (keep your domain!)
+1. Back up your repo's `CNAME` file first (it holds your personal domain).
+2. Unzip this package OVER your repo checkout — merge, do NOT wipe the repo
+   folder and do NOT delete any existing files (especially `CNAME`).
+3. `git add -A && git commit -m "update" && git push`.
+4. After pushing, check the `CNAME` file is still there with your domain in it.
+   Pages settings stay as they are (branch `main`, folder `/ (root)`).
 
-1. Create a new public repo on GitHub (e.g. `chicomorais-site`).
-2. In a terminal inside this folder:
+## Contents
+- `index.html` — the whole site (hash routes, no build step, no rewrites needed).
+- `src/` — all images, CV PDF, 3D scan, fonts, JS libs, AI models.
+- `tools/` — SEO mirror generator (`node tools/gen-mirrors.mjs --base <url>/`).
+  NOTE: that script rewrites `CNAME` from the --base domain — only run it with
+  your real domain, and back up `CNAME` first.
 
-```sh
-git init
-git add .
-git commit -m "Portfolio site"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/chicomorais-site.git
-git push -u origin main
-```
-
-3. On GitHub: repo **Settings → Pages** → Source: **Deploy from a branch**, Branch: **main** / **/ (root)** → Save.
-4. Your site is live at `https://YOUR-USERNAME.github.io/chicomorais-site/` within a minute or two.
-
-Optional: add a custom domain under Settings → Pages → Custom domain (e.g. `www.chicomorais.com`), then add the `CNAME` record at your DNS provider.
-
-## What’s inside
-
-- `index.html` — the whole site (content, styles, app logic)
-- `src/work/` — all project images (web-sized, faces protected)
-- `src/docs/Chico-Morais-CV.pdf` — downloadable CV
-- `src/*.md` — content spec and build notes (not linked from the site)
+## Notes
+- 100% self-hosted except video streams: Vimeo/YouTube iframes need the internet.
+- Third-party CDNs vendored into `src/vendor/`: Google Fonts (woff2),
+  model-viewer 3.5.0, MediaPipe tasks-vision 1.2.3 + wasm + pose/segmentation models (~23MB).
+- 64 unreferenced images (~12.5MB) are still in `src/`; safe to delete, listed in the site spec section 10.

@@ -45,6 +45,30 @@ For any person or AI who edits this copy later.
   *(Replaces "All images and text are his own", which reads third-person and defensive.)*
 - **Default meta description** — EN: Chico Morais — designer, photographer and creative technologist based in Berlin. Human-centred design, photography, exhibitions and physical computing. · PT: Chico Morais — designer, fotógrafo e tecnólogo criativo em Berlim. Design centrado nas pessoas, fotografia, exposições e computação física.
 - *Builder note:* the old site's browser title had the typo "Photograhpy". Use "Photography".
+- **Figure labels** (small labels above captions on all project pages) — PT shows these translations:
+
+| EN | PT |
+|---|---|
+| EXHIBITION | EXPOSIÇÃO |
+| SLIDE | SLIDE |
+| SKETCH | ESBOÇO |
+| DIAGRAM | DIAGRAMA |
+| PHOTOGRAPH | FOTOGRAFIA |
+| CONTACT SHEET | FOLHA DE CONTATO |
+| CHART | CRONOGRAMA |
+| BOARD | QUADRO |
+| TEST | TESTE |
+| MAKING | CONSTRUÇÃO |
+| DETAIL | DETALHE |
+| PRINT | IMPRESSÃO |
+| SCREEN | TELA |
+| OBJECT | OBJETO |
+| PROTOTYPE | PROTÓTIPO |
+| DOCUMENT | DOCUMENTO |
+| WIREFRAME | WIREFRAME |
+| SYSTEM | SISTEMA |
+
+- *Builder note:* set `<html lang="pt-BR">` when PT is active (screen readers and search engines use it).
 
 ---
 
@@ -74,7 +98,7 @@ For any person or AI who edits this copy later.
 **H4 · Selected work** (project cards: title, one-liner, year; one-liners are at the top of each project below)
 - Heading — EN: Selected work · PT: Trabalhos selecionados
 - Link — EN: All projects → · PT: Todos os projetos →
-- Card order: Pele Bruta · Tapete para Misturar o Mundo com Brinquedo Emprestado · Folhas · Maitê · Physical & Logical Interfaces · Padronagens · Graphic work
+- Card order: Tactile Room · Pele Bruta · Archive Readiness Check · Tapete para Misturar o Mundo com Brinquedo Emprestado · Folhas · Maitê · Physical & Logical Interfaces · Padronagens · Graphic work
 
 ## 4. Work index
 
@@ -95,8 +119,8 @@ For any person or AI who edits this copy later.
 - Subtitle — EN: A two-year journey through the body as a tool of expression · PT: Uma jornada de dois anos pelo corpo como ferramenta de expressão
 - Card one-liner — EN: A solo exhibition two years in the making: concept, photography, curation and build. · PT: Uma exposição individual construída ao longo de dois anos: conceito, fotografia, curadoria e montagem.
 - Year: 2012–2014
-- Roles — EN: Concept · Photography · Curation · Exhibition design · Production · PT: Conceito · Fotografia · Curadoria · Expografia · Produção
-- Context — EN: Final project, Digital Media Design, PUC-Rio · Photographs made during a scholarship year at Cambridge School of Art, UK · Santê Hostel, Santa Teresa, Rio de Janeiro, 24 May – 1 June 2014 · PT: Projeto final, Design – Mídia Digital, PUC-Rio · Fotografias produzidas durante um ano de bolsa na Cambridge School of Art, Reino Unido · Santê Hostel, Santa Teresa, Rio de Janeiro, de 24 de maio a 1º de junho de 2014
+- Roles — EN: Concept · Photography · Curation · Exhibition design · Production · Interactive projection · PT: Conceito · Fotografia · Curadoria · Expografia · Produção · Projeção interativa
+- Context — EN: Final project, Digital Media Design, PUC-Rio · Photographs made during a scholarship year at Cambridge School of Art, UK · Santê Hostel, Santa Teresa, Rio de Janeiro, 24 May – 1 June 2014 · Interactive animation: Design of Intelligent Objects, PUC-Rio, 2014 · PT: Projeto final, Design – Mídia Digital, PUC-Rio · Fotografias produzidas durante um ano de bolsa na Cambridge School of Art, Reino Unido · Santê Hostel, Santa Teresa, Rio de Janeiro, de 24 de maio a 1º de junho de 2014 · Animação interativa: Design de Objetos Inteligentes, PUC-Rio, 2014
 
 **PB1 · Hero image**
 - Visual: `Pele Bruta/2014.1/G2/142.jpg` — visitors in front of Desconstrução do Gênero, against the red walls. It shows the photographs the way they were meant to be seen: inside the exhibition. The night desert (`images/pele-bruta/cover.jpg`) moves to the gallery (PB15) and stays the project's card image on the home page.
@@ -169,13 +193,16 @@ For any person or AI who edits this copy later.
 - Visual 1b: diagram rendered from this text — 2012 plan (three columns) → 2014 exhibition (three columns).
 - Visual 2: `gantt.jpg` — Caption EN: The 2014 schedule, from the first presentation in March to the last in June. · PT: O cronograma de 2014, da primeira apresentação, em março, à última, em junho.
 
-**PB6b · A parallel strand** *(new from the updated brief — text only, no images: no video of it survives, and the simulation photos show people whose consent for publication is unconfirmed)*
+**PB6b · A parallel strand**
 - Heading — EN: A parallel strand · PT: Uma vertente paralela
-- EN: In the same semester, a separate course — Design de Objetos Inteligentes — picked up the projection-mapped body the exhibition had left behind and pursued it as a working prototype: a Kinect reading the visitor's silhouette, with animations projected onto their body. Starting from a public Kinect tutorial, I made four short animations in After Effects with stop-motion and digital cut-out — a seed growing into a tree through the seasons, tattoos appearing on skin, three washes of colour, falling crystals — and wired them to the live silhouette in Processing.
-- PT: No mesmo semestre, outra disciplina — Design de Objetos Inteligentes — retomou o corpo com projeção mapeada que a exposição havia deixado para trás e o levou adiante como um protótipo funcional: um Kinect lendo a silhueta do visitante, com animações projetadas sobre seu corpo. A partir de um tutorial público de Kinect, fiz quatro animações curtas em After Effects, com stop-motion e recorte digital — uma semente que vira árvore ao longo das estações, tatuagens que surgem na pele, três banhos de cor, cristais que caem — ligadas à silhueta ao vivo em Processing.
-- EN: A library update broke the Kinect integration days before the presentation and could not be fixed in time, so what was shown was a simulation: the animations composited onto photographs of real bodies. The project started as my solo G1; three classmates — Renan Dantas, Renan Kogut and Suzani Figueira — joined for G2, and who did what was never recorded.
-- PT: Uma atualização de biblioteca quebrou a integração com o Kinect dias antes da apresentação e não deu tempo de corrigir, então o que foi mostrado foi uma simulação: as animações compostas sobre fotografias de corpos reais. O projeto começou como meu G1 individual; três colegas — Renan Dantas, Renan Kogut e Suzani Figueira — se juntaram para o G2, e quem fez o quê nunca foi registrado.
-- Built below this text on the page: a webcam reconstruction (2026, clearly labeled) of all four studies plus the flow field, selectable from the animation menu. Chico supplied the original 2014 wash frames as inspiration; they power the wash mode's textures (kept out of the page itself, per Chico). His setup sketch (`process/sketch-kinect.jpg`, captioned in his own words "Rascunho…") is the section's only still, placed between the two paragraphs.
+- EN: In the same semester, a separate course — Design de Objetos Inteligentes — picked up the projection-mapped body the exhibition had left behind and pursued it as a working prototype: a Kinect reading the visitor's silhouette, with animations projected onto their body. Starting from a public Kinect tutorial, we made four short animations in After Effects with stop-motion and digital cut-out — a seed growing into a tree through the seasons, tattoos appearing on skin, three washes of colour, falling crystals — and wired them to the live silhouette in Processing.
+- PT: No mesmo semestre, outra disciplina — Design de Objetos Inteligentes — retomou o corpo com projeção mapeada que a exposição havia deixado para trás e o levou adiante como um protótipo funcional: um Kinect lendo a silhueta do visitante, com animações projetadas sobre seu corpo. A partir de um tutorial público de Kinect, fizemos quatro animações curtas em After Effects, com stop-motion e recorte digital — uma semente que vira árvore ao longo das estações, tatuagens que surgem na pele, três banhos de cor, cristais que caem — ligadas à silhueta ao vivo em Processing.
+- EN: A library update broke the Kinect integration shortly before the presentation and could not be fixed in time, so what was shown was a simulation: the animations composited onto photographs of real bodies. The project started as my solo G1; three classmates — Renan Dantas, Renan Kogut and Suzani Figueira — joined for G2.
+- PT: Uma atualização de biblioteca quebrou a integração com o Kinect pouco antes da apresentação e não deu tempo de corrigir, então o que foi mostrado foi uma simulação: as animações compostas sobre fotografias de corpos reais. O projeto começou como meu G1 individual; três colegas — Renan Dantas, Renan Kogut e Suzani Figueira — se juntaram para o G2.
+- Visual: Chico's set-up sketch (`src/work/pele-bruta/process/sketch-kinect.jpg`) — Caption EN: The set-up: a Kinect reads the silhouette, and a projector maps the animation onto the body. · PT: A montagem: o Kinect lê a silhueta, e o projetor aplica a animação sobre o corpo.
+- Built below this text on the page: a webcam reconstruction (2026, clearly labeled — EN: Try the body as canvas in a working prototype, rebuilt for your webcam (2026). · PT: Teste o corpo como tela em um protótipo, reconstruído para sua webcam (2026).) of all four studies plus the flow field, selectable from the animation menu. Chico supplied the original 2014 wash frames as inspiration; they power the wash mode's textures (kept out of the page itself, per Chico). The tattoos are his own Folhas characters (2011).
+- *Open:* if the 2026 flow-field mode recreates the tutorial's particle flow field, add "flow field after Amnon Owed" to the 2026 part of the credits; if the widget reuses the 2014 animation frames themselves, they stay covered by the 2014 group credit.
+- *Builder note (consent):* the 2014 simulation photos both show Suzani Figueira, a member of the team — publication approved by Chico. Do not publish the stills of similar projects or animation references from the old report (IllumiRoom, Pink Floyd, Hypermetrop, the dance video, Plump Bird, AOL).
 
 **PB7 · Finding the name**
 - Heading — EN: Finding the name · PT: A escolha do nome
@@ -248,8 +275,8 @@ For any person or AI who edits this copy later.
 - Optional extra process image: `text-draft-en.jpg` — Caption EN: An April draft of the wall text, still in four parts. · PT: Um rascunho de abril do texto de parede, ainda em quatro partes.
 
 **Credits**
-- EN: Concept, photography, exhibition design and production: Chico Morais · Curation: Chico Morais with Maria das Graças Chagas (advisor) · Curatorial text: Josip Horvat · Venue: Santê Hostel, Santa Teresa
-- PT: Conceito, fotografia, expografia e produção: Chico Morais · Curadoria: Chico Morais e Maria das Graças Chagas (orientadora) · Texto curatorial: Josip Horvat · Local: Santê Hostel, Santa Teresa
+- EN: Concept, photography, exhibition design and production: Chico Morais · Curation: Chico Morais with Maria das Graças Chagas (advisor) · Curatorial text: Josip Horvat · Venue: Santê Hostel, Santa Teresa. Interactive animation (2014): Chico Morais with Renan Dantas, Renan Kogut and Suzani Figueira · Kinect tracking adapted from Amnon Owed's tutorial on CreativeApplications.net · Webcam version (2026): Chico Morais, built with MediaPipe Pose · Tattoos: Folhas characters (2011)
+- PT: Conceito, fotografia, expografia e produção: Chico Morais · Curadoria: Chico Morais e Maria das Graças Chagas (orientadora) · Texto curatorial: Josip Horvat · Local: Santê Hostel, Santa Teresa. Animação interativa (2014): Chico Morais com Renan Dantas, Renan Kogut e Suzani Figueira · Rastreamento com Kinect adaptado do tutorial de Amnon Owed no CreativeApplications.net · Versão para webcam (2026): Chico Morais, feita com MediaPipe Pose · Tatuagens: personagens do Folhas (2011)
 - Thanks — EN: With thanks to Bianca Pimentel, Clarice Rodriguez, Flávia Bretas, Isabel Langlands, Isabela La Croix, Jordana Corrêa, Josip Horvat, Luiza McAllister, Marcela Abbade, Maria das Graças Chagas, Raíssa Tavares and Suzani Figueira, who helped build Pele Bruta and make it real, and to Santê Hostel. · PT: Agradeço a Bianca Pimentel, Clarice Rodriguez, Flávia Bretas, Isabel Langlands, Isabela La Croix, Jordana Corrêa, Josip Horvat, Luiza McAllister, Marcela Abbade, Maria das Graças Chagas, Raíssa Tavares e Suzani Figueira, que ajudaram a construir Pele Bruta e a torná-la real, e ao Santê Hostel.
 
 **Removed from the previous version**
@@ -655,15 +682,51 @@ Decided: the section holds all graphic work, hand-made and digital, including th
 - "Both contatos are confirmed by their own InDesign contact sheets, which is how the set is known to be complete…" (the contact sheets are now shown instead).
 - "Why it is here" (replaced by G4).
 
-#### Entry 2 — Cabras Cabras (poster, 2015)
+#### Entry 2 — Cabras Cabras (theatre identity, 2014–2015; first entry — replaces the 2015 poster-only block)
+
+Source: Chico's paste-ready Cabras Cabras entry (14 Nov 2026, Chico's words; updated the same day with the budget story; merged into this section and retired). Images in `src/work/cabras-cabras/` (11 web-sized JPGs); CC1 reuses the live façade photo in `src/work/introducao-a-grafica/`.
 
 - Title: Cabras Cabras
-- Card one-liner — EN: Poster for a play, printed as a large banner on the front of a Rio de Janeiro theatre. · PT: Cartaz de uma peça, impresso como grande banner na fachada de um teatro do Rio de Janeiro.
-- EN: Poster and graphic design for the play *Cabras Cabras* by Priscilla Balio, directed by Fernando Philbert, with Priscilla Balio, Flávio Vidaurre and Ton Rodrigues. It was printed as a large banner on the front of Teatro Glauce Rocha, on Avenida Rio Branco in Rio de Janeiro, for the season.
-- PT: Cartaz e design gráfico da peça *Cabras Cabras*, de Priscilla Balio, com direção de Fernando Philbert e elenco formado por Priscilla Balio, Flávio Vidaurre e Ton Rodrigues. Foi impresso como grande banner na fachada do Teatro Glauce Rocha, na Avenida Rio Branco, no Rio de Janeiro, durante a temporada.
-- Credits — EN: Graphic design: Chico Morais · Production photography: Aline Macedo · PT: Design gráfico: Chico Morais · Fotografia de cena: Aline Macedo
-- Year: 2015
-- Visuals (folder `Jobs`): `picture of poster of play cabrascabras at street` (the banner on the theatre, lead image) and `poster of play cabrascabras.JPG` (the poster).
+- Card one-liner — EN: Visual identity for a play set in the Brazilian sertão: poster, banners, programme and a venue logo. · PT: Identidade visual de uma peça ambientada no sertão brasileiro: cartaz, banners, programa e o logotipo de um espaço cultural.
+- Year: 2014–2015
+- Roles — EN: Graphic design · Typography · Poster and banners · Programme · Logo · PT: Design gráfico · Tipografia · Cartaz e banners · Programa · Logotipo
+- Context — EN: Theatre production · Casarão de Santa, Santa Teresa (2014) and Teatro Glauce Rocha, Rio de Janeiro (2015) · PT: Produção teatral · Casarão de Santa, Santa Teresa (2014) e Teatro Glauce Rocha, Rio de Janeiro (2015)
+- Credits — EN: Graphic design: Chico Morais · Photography: Aline Macedo · Play: Priscilla Balio · Direction: Fernando Philbert · Cast: Priscilla Balio, Flávio Vidaurre and Ton Rodrigues · PT: Design gráfico: Chico Morais · Fotografia: Aline Macedo · Texto: Priscilla Balio · Direção: Fernando Philbert · Elenco: Priscilla Balio, Flávio Vidaurre e Ton Rodrigues
+
+**CC1 · Hero** — the façade photo (`src/work/introducao-a-grafica/cabras-banner.jpg`): Caption EN: The banner on the façade of Teatro Glauce Rocha, Rio de Janeiro, 2015. · PT: O banner na fachada do Teatro Glauce Rocha, Rio de Janeiro, 2015.
+
+**CC2 · A play from the sertão** — text only, no visual
+- EN: Cabras Cabras, written by Priscilla Balio and directed by Fernando Philbert, is set deep in the Brazilian sertão, the dry backlands of the Northeast. Three people live in absolute poverty, with only their goats for company. In their isolation they begin to take on the animals' habits, while fighting fiercely over the power held by the head of the family. I designed the play's visual identity: the poster, the banners, the programme and the strip of supporters' logos.
+- PT: Cabras Cabras, texto de Priscilla Balio com direção de Fernando Philbert, se passa no sertão profundo. Três personagens vivem em miséria absoluta, tendo apenas uma criação de cabras como companhia. Isolados, começam a imitar os trejeitos e os hábitos dos próprios animais, enquanto disputam ferozmente o poder do líder da família. Criei a identidade visual da peça: o cartaz, os banners, o programa e a faixa de logos dos apoiadores.
+
+**CC3 · A cordel for a small budget**
+- Heading — EN: A cordel for a small budget · PT: Um cordel para pouco orçamento
+- EN: At first there was no budget for a printed programme. My answer came from the sertão itself: literatura de cordel, the popular booklets that for generations have been made by hand on very cheap paper, with woodcut (xilogravura) covers. I planned the programme as a cordel booklet, testing cordel and woodcut lettering for the title and laying it out in a single colour, so that it could be made by hand at very little cost.
+- PT: No início, não havia verba para um programa impresso. A resposta veio do próprio sertão: a literatura de cordel, folhetos feitos à mão há gerações, em papel muito barato, com capas em xilogravura. Planejei o programa como um folheto de cordel, testando letras de cordel e de xilogravura para o título e diagramando tudo em uma só cor, para que pudesse ser feito à mão e com custo mínimo.
+- Visuals: `cc-type-tests.jpg` (1414×2000) — Caption EN: First type tests, with cordel and woodcut lettering, August 2014. · PT: Primeiros testes tipográficos, com letras de cordel e xilogravura, agosto de 2014. · `cc-programme-first-1.jpg` + `cc-programme-first-2.jpg` (1754×1241 each, side-by-side pair) — Caption EN: The first programme, planned as a one-colour cordel booklet, August 2014. · PT: O primeiro programa, pensado como um folheto de cordel em uma só cor, agosto de 2014. (On the page: type tests full-width, the two first-layout pages as a smaller pair via the `br` gallery flag.)
+
+**CC4 · Two seasons, one image** — side-by-side pair
+- EN: The first season ran in 2014 at Casarão de Santa, in Santa Teresa, with a 100 × 150 cm banner. In 2015 the play moved to Teatro Glauce Rocha, in the centre of Rio, and the poster went up on its façade, with the new dates and Funarte's support added. The production went on using the image for seasons to come.
+- PT: A primeira temporada aconteceu em 2014, no Casarão de Santa, em Santa Teresa, com um banner de 100 × 150 cm. Em 2015 a peça foi para o Teatro Glauce Rocha, no Centro do Rio, e o cartaz subiu na fachada, com as novas datas e o apoio da Funarte. A produção continuou usando a imagem nas temporadas seguintes.
+- Visuals: `cc-banner-2014.jpg` (1333×2000) — Caption EN: The banner for the first season, at Casarão de Santa, 2014. · PT: O banner da primeira temporada, no Casarão de Santa, 2014. · `cc-banner-2015.jpg` (1058×2000) — Caption EN: The 2015 version, for Teatro Glauce Rocha. · PT: A versão de 2015, para o Teatro Glauce Rocha.
+
+**CC5 · From cordel to clay**
+- Heading — EN: From cordel to clay · PT: Do cordel ao barro
+- EN: When a new supporter joined the production, we could afford fine colour printing, and the programme changed with it. I kept the sertão at its heart: a background of barro, or clay, recalling the dry earth of the seca, the sertão drought, and the pau-a-pique walls, wattle and daub, still used to build many houses there today. The cover became a small poster, its title running beside a production photograph. For the 2015 season I redesigned it as a single A3 sheet, printed and folded.
+- PT: Quando um novo apoiador chegou à produção, pudemos imprimir em cores e com qualidade, e o programa mudou junto. Mantive o sertão no centro: um fundo de barro, que lembra a terra seca do sertão e as paredes de pau-a-pique, técnica tradicional e ecológica com que muitas casas ainda hoje são construídas. A capa virou um pequeno cartaz, com o título ao lado de uma foto do espetáculo. Para a temporada de 2015, redesenhei o programa numa única folha A3, impressa e dobrada.
+- Visuals, each side as one wide image (horizontal scroll inside the frame on phones): `cc-barro.jpg` (726×638, shown at 430px to match the cover) — Caption EN: The barro texture behind the programme. · PT: A textura de barro no fundo do programa. · `cc-programme-cover.jpg` (941×2000) — Caption EN: The colour programme cover, 2014. · PT: A capa do programa em cores, 2014. · `cc-programme-inside.jpg` (1985×1404) — Caption EN: The 2015 programme, inside: the presentation and the words of the author and the director. · PT: O programa de 2015, por dentro: a apresentação e as palavras da autora e do diretor. · `cc-programme-outside.jpg` (1985×1404) — Caption EN: The 2015 programme, outside: credits, supporters and cover. · PT: O programa de 2015, por fora: ficha técnica, apoiadores e capa.
+
+**CC6 · Every logo in its place**
+- Heading — EN: Every logo in its place · PT: Cada logo no seu lugar
+- EN: A play with many supporters needs a strip of logos that sits calmly at the foot of the poster. I adjusted and balanced each one so that they read as a single line. Casarão de Santa had no logo at all, so I created one from a photograph of the building's yellow shutters.
+- PT: Uma peça com muitos apoiadores precisa de uma faixa de logos que fique tranquila no pé do cartaz. Ajustei e equilibrei cada um para que funcionassem como uma única linha. O Casarão de Santa não tinha logo, e criei um a partir de uma fotografia das janelas amarelas do casarão.
+- Visuals: `cc-logo-strip.jpg` (1622×186, crop of the 2015 poster foot) — Caption EN: The supporters' strip on the 2015 poster. · PT: A faixa de apoiadores no cartaz de 2015. (The standalone `cc-casarao-logo.jpg` removed from the page per Chico.)
+
+**Builder notes (from the entry, still apply)**
+- Don't publish the fonts, the woodcut figure ornaments or any supporter's logo on its own; they appear only inside the finished pieces.
+- The 2014 banner prints the author's name as "PRISCILA"; leave the image as printed. Captions and credits always use "Priscilla Balio".
+- Supporting fact (from the programme): the director's own text calls the play "um cordel", which backs the cordel type tests.
+- Alt text should describe each image plainly (site renders captions as alt text; captions above are written to work both ways).
 
 #### Entry 3 — Bodhgaya Films calendar (2012 calendar, designed 2011)
 
@@ -744,6 +807,236 @@ Decided: the section holds all graphic work, hand-made and digital, including th
 
 ---
 
+### 5.8 Tactile Room
+
+**The story, in brief (not published).** A personal project from 2026: a web page where people explore objects through sound and vibration, with or without seeing them. The first object is a veined rapa whelk shell Chico brought home from a beach on the Romanian Black Sea coast; the method is meant to work for museum objects, teaching materials or products sold online. Built in sixteen versions in nine days, each saved at its own address, with testing by blind and partially sighted people under way. Renders first on the work index (newest project); spec numbering keeps it last here to avoid renumbering §5.1–§5.7.
+
+**Project rules (from the brief, still apply).**
+- Place: say only "a beach on the Romanian Black Sea coast" or "a beach in Romania". Never the beach's name, a map or coordinates, in text or in any screenshot. Say nothing about whether collecting was allowed.
+- People: no testers' names or details unless they agree in writing. Until testing with blind users has happened, say "testing with blind and partially sighted people is under way" — never "tested with blind users".
+- Never "first" or "the only". Say "I found no study of…" if needed.
+- Bio line, if one is needed: "from Rio de Janeiro, Brazil, based in Berlin".
+
+**Meta**
+- Title: Tactile Room · PT: Sala Tátil · (DE on the room itself: Tastraum)
+- Subtitle — EN: Explore objects through sound and touch · PT: Explore objetos pelo som e tato
+- Card one-liner — EN: Objects explored through sound and vibration, starting with a sea shell. · PT: Objetos explorados por som e vibração, começando por uma concha do mar.
+- Year: 2026
+- Roles — EN: Concept · 3D scanning (photogrammetry) · Sound and vibration design · Interaction design · Research · PT: Conceito · Digitalização 3D (fotogrametria) · Design de som e vibração · Design de interação · Pesquisa
+- Context — EN: Personal project, Berlin; sample project for the OceanX Ocean Futures Fellowship 2027 application · PT: Projeto autoral, Berlim; projeto de amostra para a candidatura à OceanX Ocean Futures Fellowship 2027
+- Live: https://tactileroom.chicomorais.com (opens in the visitor's language; the PT page links `?lang=pt`)
+- Work-index filters: Creative technology / Tecnologia criativa + UX and interaction / UX e interação; add Accessibility if the site gets that filter.
+
+**TR1 · Hero (lede, no heading)**
+- EN: A web page where people explore objects through sound and vibration, with or without seeing them. The shell is the first object; the method can also work for museum objects, teaching materials or products sold online.
+- PT: Uma página onde se exploram objetos por som e vibração, com ou sem vê-los. A concha é o primeiro objeto; o método também pode servir para objetos de museu, materiais didáticos ou produtos vendidos online.
+- Visual: the room today (`tactile-room/13-room-hero.png`, full screenshot, never cropped — cover and TR5 pair both use the original; the cover frame carries its own 8/5 ratio, the work-index card shows it whole with `object-fit: contain` on a dark ground, no zoom anywhere). Above the Open button, the interactive 3D scan (`tactile-room/shelljpg.glb`, model-viewer, camera-controls + auto-rotate) — Caption EN: The scanned shell in 3D — drag to turn it. · PT: A concha digitalizada em 3D — arraste para girar.
+- Button: Open the Tactile Room / Abrir a Sala Tátil → the live address. (A screen recording may replace the hero image later; don't embed the room in the portfolio page.)
+
+**TR2 · A beach full of shells**
+- Heading — EN: A beach full of shells · PT: Uma praia cheia de conchas
+- EN: In September 2025, on a beach on the Romanian Black Sea coast, I found so many of these shells that it felt strange: I had never seen so many sea snail shells at once, and I felt I had to find out why. I brought one home to Berlin.
+- PT: Em setembro de 2025, numa praia na costa romena do Mar Negro, encontrei tantas dessas conchas que achei estranho: nunca tinha visto tantas conchas de caramujo de uma vez, e senti que precisava descobrir por quê. Trouxe uma para casa, em Berlim.
+- EN: It is a veined rapa whelk, Rapana venosa: native to the seas around Japan, Korea and China, first found in the Black Sea in 1947, probably brought by ships, invasive there since. The iNaturalist community confirmed the species: Research Grade, 3 of 3 identifications.
+- PT: É uma rapa venosa, Rapana venosa: nativa dos mares do Japão, da Coreia e da China, registrada pela primeira vez no Mar Negro em 1947, provavelmente trazida por navios, invasora desde então. A comunidade do iNaturalist confirmou a espécie: nível Research Grade, 3 de 3 identificações.
+- Visuals (`tactile-room/`): `06-shell-on-set-square.jpg` (the shell on a set square: 7 cm / A concha sobre um esquadro: 7 cm) · `07-shell-spiral-tip.jpg` (the spiral tip and the fine brown lines / A ponta da espiral e as finas linhas marrons) · `08-shell-opening.jpg` (the opening: pinkish white to salmon, brown lines running inside / A abertura: do branco rosado ao salmão, linhas marrons por dentro) · `09-shell-side.jpg` (side view: the knobs on the shoulder / Vista lateral: os nódulos no ombro) · `12-inaturalist-research-grade.jpg` (iNaturalist: veined rapa whelk, Research Grade, 3 of 3 / iNaturalist: rapa venosa, nível Research Grade, 3 de 3 — cropped above the map and the place name).
+
+**TR3 · Checking the machines**
+- Heading — EN: Checking the machines · PT: Testando as máquinas
+- EN: Google's AI search called it a mutable conch, 'about 35–40 mm'. I checked the name in WoRMS — an outdated combination. My ruler said 7 cm; the mutable conch reaches 4 cm and doesn't live in the Black Sea. People on iNaturalist identified the right species.
+- PT: A IA do Google a chamou de mutable conch, com 'cerca de 35–40 mm'. Conferi o nome no WoRMS — uma combinação desatualizada. Minha régua dizia 7 cm; a mutable conch chega a 4 cm e não vive no Mar Negro. Pessoas no iNaturalist identificaram a espécie certa.
+- EN: A local AI, given four photos, described the shell. I checked every point against the shell itself: it invented the size against the ruler in its own picture, missed the second point at the back, called the inside 'pearly white' and saw 'brown spots' where there are hundreds of fine brown lines. It was right about the six turns, the knobs and the net of ribs.
+- PT: Uma IA local, a partir de quatro fotos, descreveu a concha. Conferi cada ponto na própria concha: ela inventou o tamanho diante da régua na própria foto, perdeu a segunda ponta atrás, chamou o interior de 'branco perolado' e viu 'manchas marrons' onde há centenas de finas linhas marrons. Acertou as seis voltas, os nódulos e a rede de costelas.
+- EN: The description the room reads aloud was rewritten from my own checks.
+- PT: A descrição que a sala lê em voz alta foi reescrita a partir das minhas próprias conferências.
+- Visuals: `10-google-ai-answer.jpg` (Google's AI: 'mutable conch', '3.5 to 4 cm' / A IA do Google: 'mutable conch', '3,5 a 4 cm' — shop photos inside the screenshot blurred) · `11-qwen-description.png` (the local AI's description of the shell / A descrição da concha pela IA local — pair with Chico's corrections as a short list) · `06-shell-on-set-square.jpg` shown again, wide (the ruler both AIs misread / A régua que ambas as IAs leram errado).
+- This block doubles as the AI-use evidence the fellowship asks for.
+
+**TR4 · From photographs to a model**
+- Heading — EN: From photographs to a model · PT: De fotografias a modelo
+- EN: I took 164 photos in about an hour — Nikon D610, 50 mm, f/13, ISO 100 — on a turntable, processed them with Apple's Object Capture in Reality Composer Pro, cleaned the mesh in Blender: 96,566 triangles. It was live on the site the same night.
+- PT: Fiz 164 fotos em cerca de uma hora — Nikon D610, 50 mm, f/13, ISO 100 — numa plataforma giratória, processei com o Object Capture da Apple no Reality Composer Pro, limpei a malha no Blender: 96.566 triângulos. Na mesma noite já estava no ar.
+- Visuals: `01-setup-close.jpg` (camera, light tent, turntable, the shell on its stand / Câmera, tenda de luz, plataforma giratória, a concha no suporte) · `04-capture-strip-6-of-164.jpg` (six of the 164 capture photos / Seis das 164 fotos de captura) · `05-model-created.png` (Reality Composer Pro's 'Model Created' beside the mesh in Blender / 'Model Created' do Reality Composer Pro ao lado da malha no Blender).
+- Source photos: `Lab/Tactile Room/for-website/tactile-room/`. Location data removed from every file; resized for the web; numbered in page order. Before publishing: remove GPS from every photo (the set-up photos taken at home, `IMG_7933`–`IMG_7935`, carry the home's position).
+
+**TR5 · Hearing the shape**
+- Heading — EN: Hearing the shape · PT: Ouvindo a forma
+- EN: Press and drag across the shell, or use the arrow keys, a gamepad or a screen reader. Higher notes where the surface sticks out; a crackly sound over ridges; a short falling sound when you leave the shell. A voice names three places: the spiral tip, the back tip and the opening. Describe reads a description of the shell aloud.
+- PT: Pressione e arraste sobre a concha, ou use as setas, um gamepad ou um leitor de tela. Notas mais altas onde a superfície se projeta; um som crepitante sobre as cristas; um som curto descendente ao sair da concha. Uma voz nomeia três lugares: a ponta da espiral, a ponta de trás e a abertura. Descrever lê em voz alta uma descrição da concha.
+- EN: Hold a finger still and turn the shell under it: it plays as it passes under the finger, faster spins sounding busier, almost like an instrument. Vibration follows the surface on Android phones and gamepads; iPhones can't vibrate from a web page.
+- PT: Deixe um dedo parado e gire a concha sob ele: ela toca ao passar sob o dedo, giros mais rápidos soando mais agitados, quase como um instrumento. A vibração acompanha a superfície em celulares Android e gamepads; iPhones não vibram a partir de uma página web.
+- Visuals: `14-room-sound-map.png` (the sound map: cyan ridges, coral grooves / O mapa de som: cristas em ciano, sulcos em coral) next to `13-room-hero.png` (the same view with the sound map off / A mesma vista com o mapa de som desligado).
+
+**TR6 · Without looking**
+- Heading — EN: Without looking · PT: Sem olhar
+- EN: Arrow keys move a fingertip, a gamepad — left stick explores, right stick turns, L2 and R2 zoom — and screen-reader support, with spoken hints that can be switched off so the screen reader speaks. English, Portuguese and German, and a touch-area cue so blind visitors know why the page doesn't scroll there.
+- PT: As setas movem uma ponta de dedo, um gamepad — o analógico esquerdo explora, o direito gira, L2 e R2 aproximam — e suporte a leitor de tela, com dicas faladas que podem ser desligadas para o leitor falar. Inglês, português e alemão, e um aviso na área de toque para que visitantes cegos saibam por que a página não rola ali.
+- Visuals: `18-room-keys-and-gamepad.png` (the keys panel, with the gamepad controls / O painel de teclas, com os controles do gamepad) · phone row: `17-room-phone-pt.jpg` (the room on a phone, in Portuguese / A sala no celular, em português) + `17f-room-phone-en-sound-map-touch.jpg` (phone, English, sound map on, a finger on the shell / Celular, inglês, mapa de som ligado, um dedo na concha) + `17d-room-phone-de.jpg` (phone, German, sound map off / Celular, alemão, mapa de som desligado). Shell bands aligned across the row (17 padded +152px top, 17f +33px left, sampled dark background). The 17-series PNGs ship as JPEGs on the page.
+
+**TR7 · Sixteen versions in nine days**
+- Heading — EN: Sixteen versions in nine days · PT: Dezesseis versões em nove dias
+- EN: Every version is saved and still opens at its own address. Sixteen versions in nine days, from a stand-in shell made from a formula to the real scan, the questionnaire and the shell that plays as it turns.
+- PT: Cada versão está salva e ainda abre no próprio endereço. Dezesseis versões em nove dias, de uma concha substituta feita de fórmula à digitalização real, ao questionário e à concha que toca ao girar.
+- Version cards, each linking to its saved address (`https://tactileroom.chicomorais.com/versions/v1.0-2026-11-05/` and so on; 1.15 has no snapshot folder yet so its card links the live room):
+  - 1.0 · 5 Nov — first room: a stand-in shell made from a formula; sound from the surface; keyboard; spoken position. · 1.0 · 5 nov — primeira sala: concha substituta feita de fórmula; som a partir da superfície; teclado; posição falada.
+  - 1.1 · 6 Nov — vibration on Android phones and gamepads. · 1.1 · 6 nov — vibração em celulares Android e gamepads.
+  - 1.2 · 10 Nov — sounds redesigned after research: a soft wooden knock instead of a game-like chime. · 1.2 · 10 nov — sons redesenhados após pesquisa: um toque suave de madeira em vez de um sino de jogo.
+  - 1.3 · 10 Nov — German; test logs that save themselves. · 1.3 · 10 nov — alemão; registros de teste que se salvam sozinhos.
+  - 1.4 · 11 Nov — the deep-sea sonar look. · 1.4 · 11 nov — o visual de sonar de fundo do mar.
+  - 1.5 · 11 Nov — public on its own address; own fonts, trackpad turning, touch-area cues. · 1.5 · 11 nov — no ar no próprio endereço; fontes próprias, giro no trackpad, avisos na área de toque.
+  - 1.6 · 12 Nov — the real scan replaces the stand-in. · 1.6 · 12 nov — a digitalização real substitui a concha substituta.
+  - 1.7 · 12 Nov — clearer spoken names, the back tip, the size. · 1.7 · 12 nov — nomes falados mais claros, a ponta de trás, o tamanho.
+  - 1.8 · 12 Nov — 'objects', not only a shell; vibration levels for older phones. · 1.8 · 12 nov — 'objetos', não só uma concha; níveis de vibração para celulares antigos.
+  - 1.9 · 12 Nov — questionnaire; device details in the test log. · 1.9 · 12 nov — questionário; detalhes do aparelho no registro de teste.
+  - 1.10 · 12 Nov — questionnaire in a pop-up; the spoken description. · 1.10 · 12 nov — questionário em pop-up; a descrição falada.
+  - 1.11 · 12 Nov — gamepad zoom; more natural voices. · 1.11 · 12 nov — zoom no gamepad; vozes mais naturais.
+  - 1.12 · 12 Nov — the description from my own checks; layout. · 1.12 · 12 nov — a descrição a partir das minhas conferências; layout.
+  - 1.13 · 13 Nov — a screen-reader switch as the first thing on the page. · 1.13 · 13 nov — uma chave de leitor de tela como primeira coisa na página.
+  - 1.14 · 13 Nov — the shell starts larger; a tip for phones that need haptic feedback on. · 1.14 · 13 nov — a concha começa maior; uma dica para celulares que precisam do feedback háptico ligado.
+  - 1.15 · 13 Nov — the shell plays as it turns under a still finger; one finger listens while another turns. · 1.15 · 13 nov — a concha toca ao girar sob um dedo parado; um dedo escuta enquanto outro gira.
+- Visuals: `15-room-v1-0-stand-in.png` (version 1.0 with the stand-in shell made from a formula / Versão 1.0 com a concha substituta feita de fórmula) as the "before", `16-room-v1-6-first-scan.png` (version 1.6, the first with the real scan / Versão 1.6, a primeira com a digitalização real) as the "after".
+
+**TR8 · Testing with people**
+- Heading — EN: Testing with people · PT: Testando com pessoas
+- EN: Invitations to blind and partially sighted testers have gone out through a personal contact and through associations of blind and partially sighted people in Berlin and Germany; the online questionnaire is live. Testing with blind and partially sighted people is under way.
+- PT: Os convites para testadores cegos e com baixa visão saíram por um contato pessoal e por associações de pessoas cegas e com baixa visão em Berlim e na Alemanha; o questionário online está no ar. Os testes com pessoas cegas e com baixa visão estão em andamento.
+- EN: The first test, with a friend, lost its log — so since 1.3 every test saves itself. A failed test that improved the method.
+- PT: O primeiro teste, com uma pessoa amiga, perdeu o registro — por isso, desde a 1.3, todo teste se salva sozinho. Um teste que falhou e melhorou o método.
+- EN: Vibration was first felt on a friend's Android phone once Haptic feedback was switched on in the phone's settings. The block was a phone setting, not the code; the tip has been on the page since 1.14.
+- PT: A vibração foi sentida pela primeira vez no celular Android de uma pessoa amiga depois que o feedback háptico foi ativado nas configurações do aparelho. O bloqueio era uma configuração do celular, não do código; a dica está na página desde a 1.14.
+- EN: The questionnaire asks how people describe themselves, not how much they see. That was my decision, and it shows care.
+- PT: O questionário pergunta como as pessoas se descrevem, não o quanto enxergam. Essa foi minha decisão, e ela demonstra cuidado.
+- Visual: `19-room-feedback-form.png` (the questionnaire pop-up / O questionário em pop-up).
+- Public wording: say "associations of blind and partially sighted people in Berlin and Germany" rather than naming the associations, until they agree to be named (naming them can read as endorsement).
+- Fill in after the sessions: who (no names without consent), what they did, what they said, the two things that changed.
+
+**TR9 · Where it comes from**
+- Heading — EN: Where it comes from · PT: De onde veio
+- EN: The idea goes back to my PUC-Rio years: a device letting blind visitors feel artworks in museums. Pele Bruta (2014) — inline link to the Pele Bruta page — explored perception and the body.
+- PT: A ideia vem dos meus anos de PUC-Rio: um dispositivo para que visitantes cegos sentissem obras de arte em museus. Pele Bruta (2014) — link interno para a página Pele Bruta — explorou percepção e corpo.
+- EN: The closest prior art I found is ShapeSonic (SIGGRAPH Asia 2023): sound for touching 3D shapes in a VR headset, with abstract shapes. The difference here: a real object, an ordinary browser, a description checked against the object, and testing with people.
+- PT: A referência mais próxima que encontrei é o ShapeSonic (SIGGRAPH Asia 2023): som para tocar formas 3D num headset de VR, com formas abstratas. A diferença aqui: um objeto real, um navegador comum, uma descrição conferida no objeto e testes com pessoas.
+- ShapeSonic is named in text with its link (https://cragl.cs.gmu.edu/shapesonic/); there is no outbound button for it.
+
+**Ending (headless, Chico's words)**
+- EN: Coming next: more objects, the shell as a musical instrument, a first round of tests with five blind and partially sighted people.
+- PT: A seguir: mais objetos, a concha como instrumento musical, uma primeira rodada de testes com cinco pessoas cegas e com baixa visão.
+
+**Credits**
+- EN: Concept, photography, scan, testing and texts: Chico Morais. Code written with AI assistance (Claude).
+- PT: Conceito, fotografia, escaneamento, testes e textos: Chico Morais. Código escrito com assistência de IA (Claude).
+- Testers: [names, only with consent]
+
+**Builder notes**
+- The room lives at its own address (https://tactileroom.chicomorais.com), not in a folder of the portfolio. Link out; don't embed. Don't link the studio or the vibration check page.
+- Saved versions: `https://tactileroom.chicomorais.com/versions/v1.0-2026-11-05/` and so on (folder names in the repository's `versions/`).
+- Screenshots: no maps, place names or coordinates; crop iNaturalist screenshots above the map and the place line.
+- Don't use: the beach photo (it shows the place), the other iNaturalist screenshots (map and place), the "parts of a shell" images saved from the internet (not Chico's), the `inspo` mock-ups.
+
+### 5.9 Archive Readiness Check
+
+**The story, in brief (not published).** A personal project from 2026: a browser tool that checks whether photos carry what an archive needs, tested on 57 of Chico's own ocean, coast and dive photos; his dive logbook fixed the dates. It now sits third on the work index, after Tactile Room and Pele Bruta (moved there 16 Nov at Chico's request); spec numbering keeps it here to avoid renumbering §5.1–§5.8.
+
+**Project rules (from the brief, still apply).**
+- Use only the files in `src/work/archive-readiness/`; they are cropped and stripped of all metadata. No other logbook photo: signatures and instructor stamps stay private.
+- Voice: first person, process before outcome, headings of 6 words or fewer, captions of 20 words or fewer, text blocks of 90 words or fewer, British English. Chico writes or approves the final text.
+- Never "first" or "the only".
+- Code credit: "The tool was proposed and coded with AI assistance (Claude)". Never "I coded".
+
+**Meta**
+- Title: Archive Readiness Check · PT: Guia Arquivo Pronto
+- Subtitle: none supplied — omit it; do not invent one.
+- Card one-liner — EN: Checks whether photos carry what an archive needs; tested on 57 of my own ocean photos, with a dive logbook fixing the dates. · PT: Verifica se as fotos trazem o que um arquivo precisa; testado em 57 fotos minhas do oceano, com o diário de bordo corrigindo as datas.
+- Year: 2026
+- Roles — EN: Audit of my own archive · Metadata editing (Lightroom, ExifTool) · Species checks (iNaturalist) · Dating photos from my dive logbook · Captions · Testing the tool · Publishing it · PT: Auditoria do meu próprio arquivo · Edição de metadados (Lightroom, ExifTool) · Verificação de espécies (iNaturalist) · Datação das fotos pelo diário de bordo · Legendas · Teste e publicação da ferramenta
+- Context — EN: Personal project, Berlin; sample for the OceanX Ocean Futures Fellowship 2027 (Digital Asset & Archives) · PT: Projeto autoral, Berlim; amostra para a candidatura à OceanX Ocean Futures Fellowship 2027 (Digital Asset & Archives)
+- Live: https://archivereadiness.chicomorais.com (link out; don't embed)
+- Work-index filters: Creative technology / Tecnologia criativa
+- Cover: `src/work/archive-readiness/ar-02-archive-ready-rows.jpg` (1600×684) — the hero: the ten archive-ready rows — Caption EN: The ten photos that now pass: each has a person-written caption. · PT: As dez fotos aprovadas agora: cada uma com legenda escrita por uma pessoa. Work-index card thumbnail: `src/work/archive-readiness/ar-04-logbook-dive41.jpg` (new generic `thumb` override in `coverEl`; detail cover unchanged).
+- Credits — EN: The audit, captions, dating from the logbook and conclusions: Chico Morais. The tool was proposed and coded with AI assistance (Claude). Species identifications: iNaturalist community. · PT: A auditoria, as legendas, a datação pelo diário de bordo e as conclusões: Chico Morais. A ferramenta foi proposta e programada com assistência de IA (Claude). Identificações de espécies: comunidade iNaturalist.
+
+**AR1 · What an archive needs / O que um arquivo precisa**
+- EN: An archive needs to know who made a photo, who owns it, what it shows, and where and when it was taken. At GetYourGuide (2024–2025), one missing licence or source could stop an image from being used.
+- PT: Um arquivo precisa saber quem fez uma foto, quem detém os direitos, o que ela mostra, onde e quando foi tirada. Na GetYourGuide (2024–2025), uma licença ou fonte faltando podia impedir o uso de uma imagem.
+- EN: Expedition media is gathered once, at great cost.
+- PT: O material de expedição é coletado uma vez, a um custo alto.
+- No visuals.
+
+**AR2 · The tool / A ferramenta**
+- EN: It reads a folder of photos in the browser; nothing is uploaded. It checks ten fields: creator, rights, caption, keywords, date, place, alt text, title, credit and licence.
+- PT: Lê uma pasta de fotos no navegador; nada é enviado. Verifica dez campos: criador, direitos, legenda, palavras-chave, data, local, texto alternativo, título, crédito e licença.
+- EN: It reads EXIF, IPTC and XMP, flags conflicts, and spots camera defaults posing as data: GoPro's "DCIM\104GOPRO" as a caption, "NIKON USER" as a creator. It writes ExifTool commands that fill only empty fields.
+- PT: Lê EXIF, IPTC e XMP, aponta conflitos e detecta padrões de fábrica da câmera se passando por dados: "DCIM\104GOPRO" da GoPro como legenda, "NIKON USER" como criador. Escreve comandos ExifTool que preenchem só os campos vazios.
+- Button: Open Archive Readiness Check / Abrir o Archive Readiness Check → the live address.
+- Visual (`src/work/archive-readiness/`): `ar-01-final-check.jpg` (1600×954) — Caption EN: The check on my 57 photos: every required field filled except captions, so 10 are archive-ready. · PT: A verificação nas minhas 57 fotos: todos os campos obrigatórios preenchidos menos as legendas, então 10 estão prontas para arquivo.
+
+**AR3 · 57 of my own photos / 57 fotos minhas**
+- EN: Ocean, coast and dive photos: 38 from a GoPro HERO3+, 16 from a Nikon D7000 and 3 from a Nikon D610. None of the three cameras records GPS.
+- PT: Fotos do oceano, da costa e de mergulho: 38 de uma GoPro HERO3+, 16 de uma Nikon D7000 e 3 de uma Nikon D610. Nenhuma das três câmeras registra GPS.
+- EN: Species were checked by people on iNaturalist: six of seven at Research Grade. The last gap is captions, the one field only a person can write.
+- PT: As espécies foram verificadas por pessoas no iNaturalist: seis de sete em nível Research Grade. A última lacuna são as legendas, o único campo que só uma pessoa pode escrever.
+- Before/after cards (Field: before → final):
+  - Creator: 15 → 57 · Criador: 15 → 57
+  - Copyright: 1 → 57 · Direitos autorais: 1 → 57
+  - Caption: 1 → 10 · Legenda: 1 → 10
+  - Keywords: 0 → 57 · Palavras-chave: 0 → 57
+  - Date: 57, 15 wrong → 57, corrected or estimated · Data: 57, 15 erradas → 57, corrigidas ou estimadas
+  - Place: 0 → 57 · Local: 0 → 57
+  - Credit line: 0 → 57 · Linha de crédito: 0 → 57
+  - Licence: 0 → 57 · Licença: 0 → 57
+  - Archive-ready: 0 → 10 of 57 · Prontas para arquivo: 0 → 10 de 57
+- Visuals (`src/work/archive-readiness/`): `ar-07-lightroom-no-gps.jpg` (1496×954, macOS menu bar cropped off 15 Nov) — Caption EN: Where I thought I'd find GPS: an empty field. None of my three cameras records it. · PT: Onde achei que encontraria o GPS: um campo vazio. Nenhuma das minhas três câmeras o registra. · `ar-06-inaturalist-ids.jpg` (1214×786) — Caption EN: Species named by people, not by AI. Note the dates: the camera's 2013 errors had reached iNaturalist. · PT: Espécies nomeadas por pessoas, não por IA. Repare nas datas: os erros de 2013 já tinham chegado ao iNaturalist.
+
+**AR4 · Metadata is a claim / Metadados são uma afirmação**
+- EN: It is impressing and almost a bit scaring with how easy it is to change a metadata of a picture. Even the date a picture was taken.
+- PT: É impressionante e quase um pouco assustador como é fácil mudar os metadados de uma foto. Até a data em que ela foi tirada.
+- EN: A file cannot prove its own data. Trust comes from outside it: a logbook, the file-number sequence, other photos from the same trip.
+- PT: Um arquivo não pode provar os próprios dados. A confiança vem de fora dele: um diário de bordo, a sequência dos números dos arquivos, outras fotos da mesma viagem.
+- No visuals.
+
+**AR5 · Logbook vs Metadata / Diário de bordo e metadados (Chico's title)**
+- EN: The GoPro clock had reset: 15 photos said early 2013, but the camera only came out in October 2013. The dates were wrong; the gaps between shots were right.
+- PT: O relógio da GoPro tinha zerado: 15 fotos diziam início de 2013, mas a câmera só foi lançada em outubro de 2013. As datas estavam erradas; os intervalos entre as fotos estavam certos.
+- EN: The logbook fixed them dive by dive. The camera lost time whenever its battery died, so one shift could not fit them all. Dive 30's note, "shark attraction", matches the shark photo.
+- PT: O diário de bordo corrigiu mergulho a mergulho. A câmera perdia a hora sempre que a bateria morria, então um único ajuste não servia para todas. A anotação do mergulho 30, "shark attraction", combina com a foto do tubarão.
+- EN: The wrong dates had already reached iNaturalist ("Mar '13"); I corrected them there on 15 November. Each corrected file now records the method and the camera's original time.
+- PT: As datas erradas já tinham chegado ao iNaturalist ("mar. de 2013"); corrigi lá em 15 de novembro. Cada arquivo corrigido agora registra o método e a hora original da câmera.
+- Visuals (`src/work/archive-readiness/`, cropped 16 Nov to Chico's screenshot framing — title bar kept, menu bar and surroundings cut): `ar-03-logbook-vs-metadata-dive30.jpg` (990×676, wide) — Caption EN: Logbook vs metadata: the camera said March 2013; my logbook said 3 June 2016, dive 30. · PT: Diário de bordo e metadados: a câmera marcava março de 2013; meu diário, 3 de junho de 2016, mergulho 30. · `ar-04-logbook-dive41.jpg` (1024×475, wide) + `ar-05-logbook-dive10.jpg` (880×869, wide, cropped tight 16 Nov to Chico's screenshot framing — nothing beyond it, screen region desaturated to sit closer to the 06/07 palette, stacked full-width since 16 Nov — portrait + landscape side-by-side left a gap) — Caption EN: Dive 41: the camera's 17:03 falls inside the logged dive, so its clock was right again. · PT: Mergulho 41: o 17:03 da câmera cai dentro do mergulho registrado, então o relógio estava certo de novo. · Caption EN: Dive 10, January 2016: before the clock failed, the camera's date matched the logbook. · PT: Mergulho 10, janeiro de 2016: antes de o relógio falhar, a data da câmera batia com o diário. · `ar-08-inaturalist-date-fixed.jpg` (1234×248, wide) — Caption EN: Corrected at the source: the potato rockcod back on 3 June 2016. · PT: Corrigido na fonte: o potato rockcod em 3 de junho de 2016.
+
+**AR6 · Two tools, one truth / Duas ferramentas, uma verdade**
+- EN: Lightroom and ExifTool overwrote each other twice. First an export dropped the credit and licence; then Lightroom took the files' data and dropped the place names, keywords and species titles. I restored from an earlier export.
+- PT: O Lightroom e o ExifTool sobrescreveram um ao outro duas vezes. Primeiro uma exportação descartou o crédito e a licença; depois o Lightroom assumiu os dados dos arquivos e descartou nomes de lugares, palavras-chave e títulos das espécies. Restaurei a partir de uma exportação anterior.
+- EN: The lesson: one master copy, with the other tool used only at the end.
+- PT: A lição: uma cópia mestra, com a outra ferramenta usada só no fim.
+- No visuals.
+
+**AR7 · Omitted.** The brief marks this block optional ("The field I'd require") and supplies no heading or reason — Chico's choice. Nothing is built until he writes it.
+
+**Builder notes (from the brief, still apply)**
+- No other logbook photo: signatures and instructor stamps stay private.
+- The iNaturalist screenshots used here are already cropped above maps and place data (supplied that way).
+- Captions double as alt text in the current renderer, so each caption above was written to describe its image plainly.
+- DRAFTS needing Chico's approval: card one-liner PT, all AR captions PT (faithful translations of the brief EN), AR5 heading PT, the AR2 button label PT.
+
+---
+
+### 5.10 Mãos e Patas — planned, not yet published (images still needed)
+
+*Builder note: this page does not exist on the site yet — no hero image and no screens have been supplied. Everything below is Chico's confirmed wording (29 Oct 2026), ready the moment the visuals arrive.*
+
+**The story, in brief (not published).** PUC-Rio, 2010: while Rafaela Líbano illustrated the interface, Chico did all the work on the report and the presentation, and made the navigation animation (`menu.gif`) from Rafaela's drawings.
+
+- Roles — EN: Field research · Strategy and concept · SWOT analysis · Report and presentation · Navigation animation · PT: Pesquisa de campo · Estratégia e conceito · Análise SWOT · Relatório e apresentação · Animação da navegação
+- Credits — EN: Research, strategy and concept: Chico Morais and Rafaela Líbano · Interface illustration: Rafaela Líbano · Report, presentation and navigation animation: Chico Morais · PT: Pesquisa, estratégia e conceito: Chico Morais e Rafaela Líbano · Ilustração da interface: Rafaela Líbano · Relatório, apresentação e animação da navegação: Chico Morais
+- New visual `menu.gif` — Caption EN: The animated navigation menu. · PT: O menu de navegação animado. *Builder note:* about 3.2 MB; convert it to a short looping video (MP4/WebM) so the page loads fast.
+
+**Still needed before publishing**
+1. A hero image and 4–6 screens from `Projeto/layout/paginas png` (needs a per-image pass).
+2. 2–3 Campo de Santana photos and the cycle diagrams from the report.
+3. Homepage Selected work: yes or no. Proposed work-index filter: UX and interaction.
+
+---
+
 ## 6. Photography
 
 ### 6.1 Photography index
@@ -771,6 +1064,23 @@ Decided: the section holds all graphic work, hand-made and digital, including th
 - In the series list, title the production-stills gallery "Home Is", the name of the documentary film (2020); "Home Is Not Just a Place" was only the old gallery's name.
 - Small line under the list — EN: Each series opens in the photography archive. · PT: Cada série abre no arquivo de fotografia.
 - The series list stays as it is (titles, genre labels, counts), with genre labels translated in PT: Portrait / nude → Retrato / nu · Travel → Viagem · Event → Evento · Documentary → Documental · Documentary / book → Documental / livro · Fashion → Moda · Production stills → Fotografia de produção · Self-portrait → Autorretrato · Travel / documentary → Viagem / documental · Still life → Still.
+- Series descriptions in PT (EN stays as live):
+
+| Series | EN (as live) | PT |
+|---|---|---|
+| Home Is | Production photography for the documentary film Home Is. | Fotografia de produção do documentário Home Is. |
+| Devir, Gabi Monteiro | Collection photo shoot for the Gabi Monteiro brand, collection Devir. | Ensaio da coleção Devir para a marca Gabi Monteiro. |
+| Transition | An ongoing self-portrait project. | Um projeto de autorretrato em andamento. |
+| Product | Product and still-life photography. | Fotografia de produto e still. |
+| Dao Tea | Still-product photography for a tea and cosmetics brand. | Fotografia still de produto para uma marca de chás e cosméticos. |
+| The Fire Boat Festival | Documentary project on the Fire Boat Festival in Laos. | Projeto documental sobre o Fire Boat Festival, no Laos. |
+| Emotional Nakedness | Portrait project focused on the male nude. | Projeto de retrato centrado no nu masculino. |
+| Puro Tato | Natural cosmetics made by hand for the Puro Tato programme, with Carol Romeiro. | Cosméticos naturais feitos à mão para o programa Puro Tato, com Carol Romeiro. |
+| Biking and South East Asia | Documentary series from a motorcycle journey through South East Asia. | Série documental de uma viagem de moto pelo Sudeste Asiático. |
+| Spring in Japan | Travel photography from spring in Japan. | Fotografia de viagem da primavera no Japão. |
+| The Florist | Documentary project telling the story of the florist Francis Rushby and his passion for flowers. | Projeto documental que conta a história do florista Francis Rushby e de sua paixão pelas flores. |
+| Shibari Night | Portrait series made at Shibari Night. | Série de retratos feita na Shibari Night. |
+| Antônia 15 | Social event photography. | Fotografia de evento social. |
 - Films: see section 6.3.
 
 *(Replaces "product and events are what paid for it" and "The galleries are still hosted on the archive while this site is built.")*
@@ -826,7 +1136,7 @@ Decided: the section holds all graphic work, hand-made and digital, including th
 - Eyebrow — EN: About · PT: Sobre
 - Heading: Francisco Morais Tavares
 - Lede — EN: I work as Chico Morais: a designer, photographer and creative technologist from Rio de Janeiro, Brazil, based in Berlin. I have photographed across five continents.
-- Lede — PT: Assino como Chico Morais: sou designer, fotógrafo e tecnólogo criativo, do Rio de Janeiro, e vivo em Berlim. Já fotografei em cinco continentes.
+- Lede — PT: Trabalho como Chico Morais: sou designer, fotógrafo e tecnólogo criativo, do Rio de Janeiro, e vivo em Berlim. Já fotografei em cinco continentes.
 - *Builder note:* citizenship appears once, on the Contact page, not here.
 
 **A1**
@@ -841,10 +1151,11 @@ Decided: the section holds all graphic work, hand-made and digital, including th
 - EN: Today I am moving further into creative technology, from physical computing to AI-assisted workflows and self-hosted systems, while I keep reading psychology, philosophy and art history, where many of my ideas begin.
 - PT: Hoje avanço cada vez mais na tecnologia criativa, da computação física a fluxos de trabalho com IA e sistemas auto-hospedados, sem deixar de ler psicologia, filosofia e história da arte, de onde nascem muitas das minhas ideias.
 
-**A4 · Experience** (from the CV of 29 August 2026)
+**A4 · Experience** (CV of 29 August 2026, updated from Chico's CV/LinkedIn and diving/ocean notes, 15 Nov 2026; Mercor held pending its exact on-paper title)
 
 | Years | EN | PT |
 |---|---|---|
+| 2026 | Tactile Room, Berlin — concept, 3D scanning (photogrammetry), interaction and sound design, testing; code written with AI assistance | Tactile Room, Berlim — conceito, digitalização 3D (fotogrametria), design de interação e som, testes; código escrito com assistência de IA |
 | 2024–2025 | GetYourGuide, Berlin — imagery research and editing, rights acquisition, workflow and documentation management, SEO collaboration | GetYourGuide, Berlim — pesquisa e edição de imagens, aquisição de direitos, gestão de fluxos de trabalho e documentação, colaboração em SEO |
 | 2023 | Examination assistant, CODE University of Applied Sciences, Berlin | Assistente de exames, CODE University of Applied Sciences, Berlim |
 | 2020 | Production photographer, Home Is, a documentary film by David Fenton, London | Fotógrafo de produção, Home Is, documentário de David Fenton, Londres |
@@ -858,18 +1169,25 @@ Decided: the section holds all graphic work, hand-made and digital, including th
 | Years | EN | PT |
 |---|---|---|
 | 2008–2014 | BA Industrial Design, Digital Media, PUC-Rio (degree conferred 2015) | Bacharelado em Desenho Industrial, Mídia Digital, PUC-Rio (diploma em 2015) |
-| 2013 | Photography, Cambridge School of Art, UK (scholarship) | Fotografia, Cambridge School of Art, Reino Unido (bolsa) |
+| 2013–14 | Photography, Cambridge School of Art, UK (scholarship; study abroad) | Fotografia, Cambridge School of Art, Reino Unido (bolsa; intercâmbio) |
 | 2011 | Games Design, University of East London (study abroad) | Game Design, University of East London (intercâmbio) |
 | 2014 | Zeitgeist Branding, Hitsy Design e Estratégia, Rio de Janeiro | Zeitgeist Branding, Hitsy Design e Estratégia, Rio de Janeiro |
-| 2017 | Flashlight course, Ateliê da Imagem, Rio de Janeiro | Curso Flashlight, Ateliê da Imagem, Rio de Janeiro |
+| 2015 | Advanced Open Water Diver, PADI | Advanced Open Water Diver, PADI |
+| 2017 | Flash lighting course, Ateliê da Imagem, Rio de Janeiro | Curso de iluminação com flash, Ateliê da Imagem, Rio de Janeiro |
+
+**Sidebar — Recent learning and events / Aprendizado recente e eventos**
+| Years | EN | PT |
+|---|---|---|
+| 2026 | Agentic AI for Earth Observation congress, Berlin, 19–21 October 2026, with the EVE hands-on workshop | Congresso Agentic AI for Earth Observation, Berlim, 19–21 de outubro de 2026, com workshop prático EVE |
+| 2026 | museum-digital Usertagung (online, 30 October 2026) | Usertagung museum-digital (online, 30 de outubro de 2026) |
 
 **Sidebar — Languages / Idiomas**
-- EN: Portuguese, native · English, fluent · Spanish, advanced · German, B2, working towards C1 · Japanese, Italian and French, basic
-- PT: Português, nativo · Inglês, fluente · Espanhol, avançado · Alemão, B2, rumo ao C1 · Japonês, italiano e francês, básico
+- EN: Portuguese, native · English, fluent (working language at GetYourGuide and CODE University) · Spanish, advanced · German, B2, working towards C1 · Japanese, Italian and French, basic
+- PT: Português, nativo · Inglês, fluente (língua de trabalho na GetYourGuide e na CODE University) · Espanhol, avançado · Alemão, B2, rumo ao C1 · Japonês, italiano e francês, básico
 
 **Sidebar — Also / Além disso**
-- EN: PADI Advanced diver, with nearly 100 logged dives. Vegetarian since I was 17, and mostly vegan, which is where Folhas began.
-- PT: Mergulhador PADI Advanced, com quase 100 mergulhos registrados. Vegetariano desde os 17 anos e quase vegano, e foi daí que nasceu o Folhas.
+- EN: PADI Advanced Open Water Diver, with about 100 dives (63 logged). I have snorkelled and freedived since childhood; sinking into open water after a boat entry, with blue all around, remains the clearest image of why ocean work matters to me. Vegetarian since I was 17, which is where Folhas began.
+- PT: Mergulhador PADI Advanced Open Water Diver, com cerca de 100 mergulhos (63 registrados). Faço snorkel e mergulho livre desde a infância; afundar em mar aberto após a entrada do barco, com azul por todos os lados, continua sendo a imagem mais clara do motivo pelo qual o trabalho pelo oceano importa para mim. Vegetariano desde os 17 anos, e foi daí que nasceu o Folhas.
 
 **Removed from the previous version**
 - The whole "Attribution" paragraph ("Where a claim rests only on my own report…", "I would rather a smaller portfolio I can stand behind line by line").
@@ -893,7 +1211,10 @@ Decided: the section holds all graphic work, hand-made and digital, including th
 
 ## 9. Status
 
-No open questions. Every decision is folded in above.
+Open items (everything else is folded in above):
+- Mãos e Patas page (§5.10): hero image and screens still needed.
+- Pele Bruta PB6b: flow-field attribution check (see the *Open* note there).
+- Draft captions/wording awaiting Chico's verdict: see the DRAFT lines in §10 below.
 
 - *Builder note:* "Por Onde Você Vai?" (the saint-and-devil road sign) is left out because its artwork could not be found. If Chico finds it, it goes back into the G3 table as a folk-saying piece after Ariano Suassuna's *Auto da Compadecida*.
 
@@ -987,10 +1308,47 @@ slug+field) + `tools/seo-overrides.json`; regen: `node tools/gen-mirrors.mjs --b
 Binding image rule: only web-sized max-1600px JPEGs ship — never full-size originals (same treatment The Florist always had). Florist page, films and recognition as spec'd.
 - Light/dark theme (Oct 2026, per Chico): the site follows the visitor's device setting on load and live; the header sun/moon button is a session-only override — nothing is remembered, every refresh re-follows the device. (An earlier version stored the choice; removed because a stored dark overrode the device on refresh.)
 - Pele Bruta (§5.1): contact sheet rebuilt from the PDF (non-embedded font labels recomposed), deck slide is PDF page 6, MDF seam is Chico's `2014-05-22` close-up. PB4's `Chicos photos/` image is still a placeholder.
+- Graphic work (§5.6 Entry 2): Cabras Cabras expanded to six sections (CC1 hero, CC2 play, CC3 cordel budget story, CC4 two-seasons pair, CC5 cordel-to-clay programme, CC6 logos) from Chico's entry file; 11 new JPGs in `src/work/cabras-cabras/`; CC1 reuses the live façade photo, programme sides render wide with horizontal scroll on phones (new `scrollx` gallery flag + CSS). Retired: the flat `cabras-poster.jpg` (superseded by the cleaner 2015 flat); the entry's current-image labels looked swapped — CC1's caption matches the façade photo, so it leads. Rebuilt 14 Nov after an outside edit reverted the first build. 16 Nov: the 11 files moved `src/cabras-cabras/` → `src/work/cabras-cabras/` (all 10 refs updated; verified live on the Graphic Work page).
 
 ### More DRAFT captions — Chico, please approve or rewrite
 
 5. Tapete marquee row labels: "Experimentation with Diogo/Rosário" · "Experimentação com Diogo/Rosário"; both pizza-wall shared captions.
 6. Pele Bruta deck-slide caption (spec gives none); MDF seam photo choice (closest match found — confirm or point to another).
 
-*`src/PROJECT-INDEX.md` is Chico's personal career-project index, not site documentation — deliberately untouched.*
+### Tactile Room — as built (`PROJECTS` tactile-room in index.html, images in `src/work/tactile-room/`)
+
+- Page renders first on the work index (newest project); spec numbering keeps it last (§5.8) to avoid renumbering.
+- Source brief `src/tactile-room-case-study-brief.md` merged into §5.8 above and deleted — no facts lost: project rules, TR1–TR9 copy (EN+PT as live), version cards, image table, credits and builder notes are all in §5.8.
+- Cover uses the full original `13-room-hero.png` uncropped (8/5 frame ratio via per-cover `ar`); the card shows it whole via `object-fit: contain` on a dark ground; no zoom or nudge anywhere on this image. Deleted crops: the centered crop and the stage-only crop.
+- 3D scan via model-viewer (dynamic import, camera-controls + auto-rotate, `interaction-policy` plus a document-level capture-phase wheel router that raycasts the mesh so the wheel zooms over the shell and scrolls the page elsewhere).
+- TR4 trimmed: setup-front and setup-wide photos removed; close → capture strip → model.
+- Phone row (TR6): screen 15 (PT) + 17f (EN, sound map on, finger) + 17d (German, off); shell bands levelled by padding (17 +152px top, 17f +33px left). Six 17-series PNGs converted to JPEG for the page.
+- Removed per Chico: the ShapeSonic outbound button (in-text prior-art mention with link stays); "Pele Bruta (2014)" in TR9 is an inline link to the Pele Bruta page.
+- DRAFT / needs Chico's approval: subtitle, TR1 lede, all PT captions (faithful translations of the brief EN), TR9 "closest prior art" wording.
+- 16 Nov: added to the UX and interaction tab (filters `["creative", "ux"]`); all 25 files moved from `src/Tactile-Room/tactile-room/` (+`check/`) to `src/work/tactile-room/` with all 23 refs updated; verified live.
+
+*`src/PROJECT-INDEX.md` is Chico's personal career-project index, not site documentation — deliberately untouched.
+
+### About — as built (`PROFILE` in index.html)
+
+- 15 Nov 2026: refreshed from Chico's CV/LinkedIn and diving/ocean notes. Added Tactile Room (2026) to Experience; Cambridge study-abroad years corrected to 2013–14; "Flashlight" corrected to flash lighting; added Recent learning and events (EO congress with EVE workshop; museum-digital Usertagung); English marked as the working language at GetYourGuide and CODE; PADI corrected to Advanced Open Water Diver with about 100 dives (63 logged), plus the childhood snorkelling/freediving and open-water blue-moment line. Added the 2015 PADI entry to Education. PT lede now says “Trabalho como Chico Morais”; “mostly vegan”/“quase vegano” removed. Mercor (2026) held: no on-paper title is confirmed, so no role was invented.*
+
+### Archive Readiness — as built (`PROJECTS` archive-readiness in index.html, images in `src/work/archive-readiness/`)
+
+- Third project on the work index since 16 Nov (after Tactile Room, Pele Bruta — moved at Chico's request; 2026, filter creative): AR1–AR6 sections; live-tool button (AR2); before/after table rendered as 9 numbered cards; AR7 omitted — the brief marks it optional with no content (Chico's choice). Cover is `ar-02-archive-ready-rows.jpg` with caption; the work-index card and the home feature both use `ar-04-logbook-dive41.jpg` via the generic cover `thumb` override (`featEl` honours it since 16 Nov).
+- Source brief `src/archive-readiness-case-study-brief.md` merged into §5.9 above and deleted — no facts lost: meta, AR1–AR6 copy (EN+PT as live), before/after table, image table, credits and builder notes are all in §5.9.
+- DRAFT / needs Chico's approval: card one-liner PT, all AR captions PT (faithful translations of the brief EN), AR5 heading PT, AR2 button label PT, and any AR7 content.
+- Verified live EN+PT: third card on work index, 6 headings, 8 captions, 9 cards, button link, all 9 images served (200, image/jpeg), cover loads at 1000×750.
+- 16 Nov: moved to third on the work index at Chico's request; briefly added to UX and interaction, then removed again — final filters `["creative"]`. AR5 un-paired (ar-04 landscape vs ar-05 portrait left a gap): both stack full-width; ar-05 re-cropped tight to Chico's screenshot (880×869, screen band desaturated). All 9 files moved from `src/archive-readiness/` to `src/work/archive-readiness/`; home feature fixed to use the ar-04 thumb like the work card. Verified live EN+PT.
+
+### Retired working notes — CV/LinkedIn and diving/ocean (15 Nov 2026)
+
+- Chico's `cv-and-linkedin.md` and `diving-and-ocean.md` were retired after their site-relevant changes were merged into §7 and the About log above. This section preserves the remaining non-site facts, rules and open checks.
+- Mercor (2026): do not add until the exact on-paper title is confirmed. The NotebookLM-derived “AI Data Specialist – Design & Creative Technology” is unverified; if no source names it, use the on-paper role. Keep it to one delivered-work line, with no pay, pause or project codename unless the contract allows it.
+- Public CV hygiene: the public PDF carries the phone number; a website CV version should use email and website only. Keep no street address or birthdate on the public CV.
+- PADI wording: the site uses the standard “Advanced Open Water Diver”; still check the physical card's exact wording before using it in licences/certifications lists.
+- Archive Readiness: added to About Experience now that it is live (one project line, 2026).
+- CV skill rules: describe the November 2026 Tactile Room skills as “used in a project”, not “proficient”; name only tools actually used; do not claim three.js, Web Audio or JavaScript as personal skills. The project line already covers this as “concept, interaction and sound design, testing; code written with AI assistance”.
+- LinkedIn checklist, when updating: headline from the CV profile terms; four-beat About; Experience matching the CV; PUC-Rio degree 2015 and Cambridge 2013–14; portfolio plus Tactile Room and photography archive as Featured; exact PADI and German certificate names; “from Rio de Janeiro, Brazil, based in Berlin”; pin three role-relevant skills.
+- Diving/ocean facts retained for future applications or interviews: merging with the water—problems stay behind and surface as “turned into nothing”; vegetarian since 17 and did not study Biology in order to avoid harming animals; bring home one empty shell from most trips and never take living animals; never present aquariums as a venue for the work; Abismo Anhumas was a 72 m rope descent to an emerald lake, at least 20 m deeper by scuba, about 100 m below ground in total, followed by climbing the same rope back up; do not frame a brief dark interval as knowing what blindness is like. Still uncollected: places/years behind “five continents” for diving, the Anhumas date, and one or two memorable encounters.
+- Translation cautions for future ocean copy: PT *salão* means chamber, not “saloon”; “emerald green”, not “green emerald”; “freediving”; “another world”; rope gear/harness for both directions; “torches” is correct in British English.

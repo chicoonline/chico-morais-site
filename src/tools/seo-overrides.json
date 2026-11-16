@@ -1,0 +1,24 @@
+{
+  "pele-bruta": {
+    "ogImage": "src/work/pele-bruta/exhibition/hero-142.jpg"
+  },
+  "tapete-para-misturar-o-mundo-com-brinquedo-emprestado": {
+    "ogImage": "src/work/tapete/mat-assembled.jpg",
+    "description": "A play mat for children waiting at a public hospital, approved by its infection-control committee."
+  },
+  "folhas": {
+    "ogImage": "src/work/folhas/folhas-preview.jpg"
+  },
+  "maite": {
+    "ogImage": "src/work/maite/DSC_0013.jpg"
+  },
+  "physical-logical-interfaces": {
+    "ogImage": "src/work/interfaces-fisicas-e-logicas/og-cover.jpg"
+  },
+  "padronagens": {
+    "ogImage": "src/work/padronagens/suit-hero.jpg"
+  },
+  "graphic-work": {
+    "ogImage": "src/work/introducao-a-grafica/cover.jpg"
+  }
+}

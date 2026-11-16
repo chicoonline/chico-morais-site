@@ -70,14 +70,25 @@ The site is fully portable: the markup shell has no perchance templating, and th
 module script uses no `root.*`, no imports, no `generatorName`. To rebuild
 `scratch/chico-morais-site-backup.zip`: split `index.html` into markup / `<style>` /
 `<script type="module">`, wrap as a standalone doc with `<meta charset/viewport>`, title and
-description from `main.pjs`, copy everything under `src/work/` (the only locally served path),
+description from `main.pjs`, copy everything under `src/work/` plus the other `src/`
+asset folders referenced by the page (`src/docs/Chico-Morais-CV.pdf`, the downloadable CV;
+all project images now live under `src/work/`, e.g. `src/work/tactile-room/`),
 add `.nojekyll` + a `README.md`, and zip (built + zipped in `execute_js` with `@zip.js/zip.js`
 from esm.sh). Push the zip's contents to a repo root for GitHub Pages; routes are hash-based
 so no rewrites are needed. For later changes no full re-zip is needed: hand Chico the new
-`index.html` plus zips of only the changed `src/work/` folders (paths inside the zip mirror the
-repo, e.g. `src/work/photography/<series>/`), and he replaces those files in the repo. He enables
+`index.html` plus zips of only the changed `src/` folders (paths inside the zip mirror the
+repo, e.g. `src/work/photography/<series>/`, `src/work/archive-readiness/`), and he replaces those files in the repo. He enables
 Pages once (repo Settings → Pages → Deploy from branch, `main`, `/ (root)`); the URL appears under
 the sidebar's Deployments once the build finishes.
+
+## Vendored third-party code (Nov 2026, ships in `src/vendor/`)
+
+No CDN runtime deps remain: Google Fonts (Fraunces variable + Inter + IBM Plex Mono as woff2
++ `fonts.css`), model-viewer 3.5.0 (`model-viewer.min.js`), MediaPipe tasks-vision 1.2.3
+(`tasks-vision.mjs` jsdelivr +esm bundle) with its wasm (`mediapipe-wasm/`) and the two model
+files (`mediapipe-models/`, ~23MB). Page references are relative (`./src/vendor/...` for dynamic
+`import()`, which needs the `./` — bare `src/...` specifiers fail; plain `src/...` for fetch-style
+URLs). Only the Vimeo/YouTube iframes still need the internet. Added ~25MB to the quota.
   com Brinquedo Emprestado · Folhas · Maitê · Physical & Logical Interfaces · Padronagens ·
   Graphic Work. Each: `slug, title, [titlePt], subtitle{en,pt}, oneliner{en,pt} (card + detail
   lede), year, roles{en,pt}, context{en,pt}, filters[], sections[], credits{en,pt},
@@ -359,7 +370,10 @@ A project page (`#/work/<slug>`) is built as a presentation, not an article:
   sections) so the page centers like the other project pages; Bodhgaya 01/02 unpaired
   into stacked wides, 03 capped (maxw 608 → 480 image). Cabras poster/banner and the
   all-months composite enlarged 2 Oct 2026 to just under natural resolution
-  (poster 500/505, banner 560/960, composite 700/885). Lures sketch copied into
+  (poster 500/505, banner 560/960, composite 700/885). Cabras Cabras expanded Nov 2026
+  to six sections (CC1–CC6, incl. the cordel budget story) from Chico's
+  paste-ready Cabras entry (merged Nov 2026; source file retired); images in `src/work/cabras-cabras/` (CC1 reuses the
+  live façade photo). Lures sketch copied into
   `src/work/tapete/lures-sketch.png` 2 Oct 2026 — nothing on the site loads from
   `src/2008.2…/` or `src/Jobs/` any more (only written provenance notes name them). Same-date light enhancement (unsharp 1.2px/0.3, JPEG q0.9) with
   generous face boxes composited back from the source pixels first, so the
