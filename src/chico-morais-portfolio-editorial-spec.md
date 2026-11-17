@@ -1037,6 +1037,18 @@ Source: Chico's paste-ready Cabras Cabras entry (14 Nov 2026, Chico's words; upd
 
 ---
 
+### 5.11 A Hora do Rush (Rush Time) — live 17 Nov 2026
+
+*Builder note: built from the rush case-study brief (source file retired Nov 2026 after merge — both copies deleted).*
+
+- Meta: title EN Rush Time · PT A Hora do Rush; subtitle EN "A game about the metro-door push" · PT "Um jogo sobre o empurra-empurra" (DRAFT); oneliner per brief; year "2010 · 2026" (brief says "2010 · playable version 2026" — shortened for the tag pills, Chico's call); context PUC-Rio DSG1005 2010; roles Chico's parts only; filters game (new "Game design" chip) + ux.
+- 10 sections HR1–HR10; copy first-person, "we" for 2010 team work, "I" for Chico's rules/animation/2026 version. Kept/changed table condensed to 4 cards in HR9 (dropped the trains-interval row). Team names only homem/mulher/loira/homem verde/homem branco/vovó/vovó azul/menino vermelho/menino used nowhere on the page.
+- HR8 links the live game at https://ahoradorush.chicomorais.com (Play it / Jogue, new-tab button per archive pattern; not embedded). Ranking service + Google Fonts inside the game stay external by design.
+- Professors (Julie Pires, Marco Antônio, Joy Till) left off the credits per brief's open question — in §9 if still undecided.
+- Open: title/subtitle/oneliner PT, all captions PT, HR5/HR9 PT wording, year format, game-design chip PT label (currently EN in both languages).
+
+---
+
 ## 6. Photography
 
 ### 6.1 Photography index
@@ -1212,6 +1224,7 @@ Source: Chico's paste-ready Cabras Cabras entry (14 Nov 2026, Chico's words; upd
 ## 9. Status
 
 Open items (everything else is folded in above):
+- A Hora do Rush (§5.11): all captions/headings are brief drafts; year format, game-chip PT label, professors in credits or not.
 - Mãos e Patas page (§5.10): hero image and screens still needed.
 - Pele Bruta PB6b: flow-field attribution check (see the *Open* note there).
 - Draft captions/wording awaiting Chico's verdict: see the DRAFT lines in §10 below.
@@ -1352,3 +1365,8 @@ Binding image rule: only web-sized max-1600px JPEGs ship — never full-size ori
 - LinkedIn checklist, when updating: headline from the CV profile terms; four-beat About; Experience matching the CV; PUC-Rio degree 2015 and Cambridge 2013–14; portfolio plus Tactile Room and photography archive as Featured; exact PADI and German certificate names; “from Rio de Janeiro, Brazil, based in Berlin”; pin three role-relevant skills.
 - Diving/ocean facts retained for future applications or interviews: merging with the water—problems stay behind and surface as “turned into nothing”; vegetarian since 17 and did not study Biology in order to avoid harming animals; bring home one empty shell from most trips and never take living animals; never present aquariums as a venue for the work; Abismo Anhumas was a 72 m rope descent to an emerald lake, at least 20 m deeper by scuba, about 100 m below ground in total, followed by climbing the same rope back up; do not frame a brief dark interval as knowing what blindness is like. Still uncollected: places/years behind “five continents” for diving, the Anhumas date, and one or two memorable encounters.
 - Translation cautions for future ocean copy: PT *salão* means chamber, not “saloon”; “emerald green”, not “green emerald”; “freediving”; “another world”; rope gear/harness for both directions; “torches” is correct in British English.
+
+### A Hora do Rush — as built (SHOTS.a-hora-do-rush in index.html, images in src/work/a-hora-do-rush/)
+
+- Page order: cover hr-15 (1600/1000, k screen; body duplicate removed), then per-section pairs/wides; phones as phonerow; GIF hr-21 shown animated (k film). Files used as supplied.
+- DRAFT (Chico to approve): subtitle, oneliner PT, every caption PT, year format, "Game design" chip in PT, professors in credits or not.

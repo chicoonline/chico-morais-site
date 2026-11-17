@@ -178,6 +178,9 @@ function mirror(r) {
     '<link rel="canonical" href="' +
     esc(url) +
     '">\n' +
+    '<link rel="icon" href="/favicon.ico" sizes="any">\n' +
+    '<link rel="icon" type="image/svg+xml" href="/favicon.svg">\n' +
+    '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n' +
     '<meta property="og:type" content="article">\n' +
     '<meta property="og:title" content="' +
     esc(headTitle) +
